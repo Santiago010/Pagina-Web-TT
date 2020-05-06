@@ -28,6 +28,11 @@ function evento (){
 }
 let squareOne   = new Imagen (imgOne);
 imgOne.addEventListener('load', evento.call(squareOne));
-
+let squareTwo   = new Imagen (imgTwo);
+imgTwo.addEventListener('load', evento.call(squareTwo));
+let squareThree = new Imagen (imgThree);
+imgThree.addEventListener('load', evento.call(squareThree));
+let squareFour  = new Imagen (imgFour);
+imgFour.addEventListener('load', evento.call(squareFour));
 
 
