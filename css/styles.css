@@ -14,11 +14,8 @@ body{
   align-items: center;
   display:  flex;
   background-color: #EBEDEF;
-<<<<<<< HEAD
-=======
   display: flex;
   height: 100px;
->>>>>>> banner
   width: 100%;
   height: 100px;
   justify-content: space-between;
