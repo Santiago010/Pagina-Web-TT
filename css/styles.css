@@ -83,6 +83,6 @@ body {
   cursor: pointer;
 	transition: 450ms all;
 	
-   object-fit: cover;
+  object-fit: cover;
 }
 
