@@ -13,13 +13,7 @@ body{
 .header{
   align-items: center;
   display:  flex;
-<<<<<<< HEAD
-  background-color: #EBEDEF;
-  display: flex;
-  height: 100px;
-=======
-  background-color: black;
->>>>>>> main
+  background-color: rgb(158, 152, 152);
   width: 100%;
   height: 120px;
   justify-content: space-between;
@@ -139,9 +133,6 @@ body{
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
 .title{
   margin-right: 1100px;
 }
->>>>>>> main
