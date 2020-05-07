@@ -4,13 +4,13 @@ const imgThree = document.getElementById('mini_three');
 const imgFour  = document.getElementById('mini_four');
 const imgFive = document.getElementById('mini_five');
 
-const arrayImg = ['../img-banner/image1.jpeg',
-                  '../img-banner/image2.jpeg',
-                  '../img-banner/image3.jpeg',
-                  '../img-banner/image4.jpeg',
-                  '../img-banner/image5.jpeg',
-                  '../img-banner/image6.jpeg', 
-                  '../img-banner/image7.jpeg'];
+const arrayImg = ['../docs/image1.jpeg',
+                  '../docs/image2.jpeg',
+                  '../docs/image3.jpeg',
+                  '../docs/image4.jpeg',
+                  '../docs/image5.jpeg',
+                  '../docs/image6.jpeg', 
+                  '../docs/image7.jpeg'];
 
 class Imagen {
         constructor(name){
