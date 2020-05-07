@@ -22,8 +22,8 @@ class Imagen {
         randomImg () {
                 this.name.src = arrayImg[  Math.floor(Math.random()*7)  ];
         }
-        async changeSource (){
-                await setTimeout ( () =>
+        changeSource (){
+                setTimeout ( () =>
                 { this.name.src = arrayImg[  Math.floor(Math.random()*7)  ] }, 3000 );
         }
 }
