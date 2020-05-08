@@ -27,11 +27,11 @@ class Imagen {
                 { this.name.src = arrayImg[  Math.floor(Math.random()*7)  ] }, 3000 );
         }
 }
-let squareOne   = new Imagen (imgOne);
-let squareTwo   = new Imagen (imgTwo);
-let squareThree = new Imagen (imgThree);
-let squareFour  = new Imagen (imgFour);
-let squareFive  = new Imagen (imgFive);
+const squareOne   = new Imagen (imgOne);
+const squareTwo   = new Imagen (imgTwo);
+const squareThree = new Imagen (imgThree);
+const squareFour  = new Imagen (imgFour);
+const squareFive  = new Imagen (imgFive);
 
 
 
