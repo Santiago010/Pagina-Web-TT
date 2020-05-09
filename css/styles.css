@@ -137,3 +137,42 @@ body{
 .title{
   margin-right: 1100px;
 }
+/* API FACEBOOK */
+.chat-container{
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 5;
+}
+.chat-button{
+  width: 100%;
+  max-width: 21.25em;
+
+  margin: 0;
+  padding: 4px 0;
+  border-radius: 1em;
+
+  background: #337AB7;
+  color: white;
+
+  cursor: pointer;
+  user-selector: none;
+  text-align: center;
+}
+.chat-content{
+  margin:0;
+  padding: 0;
+  background: white;
+  display: none;
+}
+.mostrarOcultar{
+  display: block;
+}
+
