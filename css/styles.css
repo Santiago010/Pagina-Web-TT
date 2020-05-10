@@ -121,21 +121,22 @@ body{
   bottom: 0;
   right: 15px;
   z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .chat-button{
   width: 100%;
-  max-width: 21.25em;
+  max-width: 4.45em;
+  max-height: 4.75em;
 
   margin: 0;
-  padding: 4px 0;
-  border-radius: 1em;
+  padding: 0.4375em;
+  border-radius: 1.5em;
 
-  background: #337AB7;
-  color: white;
-
+  background: white;
   cursor: pointer;
-  user-selector: none;
-  text-align: center;
 }
 .chat-content{
   margin:0;
