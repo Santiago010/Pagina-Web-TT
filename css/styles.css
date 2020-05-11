@@ -8,9 +8,19 @@ body{
   margin: 0;
   border: 0;
   font-size: 16px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:  'header header header header header'
+                        'main   main   main   main   main  '
+                        'banner banner banner banner banner'
+                        'footer	footer footer footer footer';
 }
 
 .header{
+  grid-area: header;
+
   align-items: center;
   display:  flex;
   background-color:rgba(0, 0, 0, 0.8);
@@ -29,6 +39,7 @@ body{
 
 
 .menu {
+  grid-area: main;
   /*margin-top: 2rem;*/
   background-color:rgba(0, 0, 0, 0.7);
 	/*border-top: 1px solid #000;
@@ -56,6 +67,8 @@ body{
 	color: black;
 }
 .footer{
+  grid-area: footer;
+
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -70,6 +83,9 @@ body{
 }
 /* COMIENZA BANNER */
 .container-banner{
+  grid-area: banner;
+  overflow: scroll;
+
   background-color: rgba(0, 0, 0, 0.0);
   width: 100%;
   height: 25em;
@@ -146,5 +162,14 @@ body{
 }
 .mostrarOcultar{
   display: block;
+}
+/* MEDIA QUERY'S */
+@media (max-width: 1200px){
+}
+@media (max-width: 992px){
+}
+@media (max-width: 768px){
+}
+@media (max-width: 576px){
 }
 
