@@ -9,7 +9,7 @@ body{
   border: 0;
   font-size: 16px;
 }
-
+/*COMPONENTE HEADER*/
 .header{
   align-items: center;
   display:  flex;
@@ -27,15 +27,17 @@ body{
   margin-left: 5rem;
 }
 
+.title{
+  margin-right: 1100px;
+  color: #ffffff;
+}
 
+
+/*COMPONENTE MENU*/
 .menu {
-  /*margin-top: 2rem;*/
   background-color:rgba(0, 0, 0, 0.7);
-	/*border-top: 1px solid #000;
-	border-bottom: 1px solid #000;*/
 	display: flex;
   justify-content: space-between;
-  /*margin-bottom: 2rem;*/
 }
 
 .menu a {
@@ -55,6 +57,8 @@ body{
 	background: white;
 	color: black;
 }
+
+/*COMPONENTE FOOTER*/
 .footer{
   justify-content: space-around;
   display: flex;
@@ -65,10 +69,3 @@ body{
   background-color:rgba(0, 0, 0, 0.8);
 }
 
-.img-footer{
-  
-}
-
-.title{
-  margin-right: 1100px;
-}
