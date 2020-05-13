@@ -33,7 +33,7 @@ body{
   width: 100%;
   font-size: 0.875em;
   padding: 0.62em;
-  background: black;
+  background: rgba(1, 1, 1, 0.9);
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -41,7 +41,7 @@ body{
 	transition: 0.2s ease all;
 }
 .menu a:hover {
-	background:  rgba(1, 1, 1, 0.9);
+	background: black;
 	color: white;
 }
 .footer{
