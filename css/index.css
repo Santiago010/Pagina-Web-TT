@@ -78,7 +78,7 @@ body{
 
   position: fixed;
   bottom: 0;
-  right: 1em;
+  left: 10px;
   z-index: 2;
 }
 .chat-button{
