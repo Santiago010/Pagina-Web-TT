@@ -1,8 +1,5 @@
-const imgOne   = document.getElementById('mini_one');
-const imgTwo   = document.getElementById('mini_two');
-const imgThree = document.getElementById('mini_three');
-const imgFour  = document.getElementById('mini_four');
-const imgFive  = document.getElementById('mini_five');
+
+const imgOne = document.getElementById('mini_one');
 
 const arrayImg = ['../docs/image1.jpeg',
                   '../docs/image2.jpeg',
@@ -28,10 +25,6 @@ class Imagen {
         }
 }
 const squareOne   = new Imagen (imgOne);
-const squareTwo   = new Imagen (imgTwo);
-const squareThree = new Imagen (imgThree);
-const squareFour  = new Imagen (imgFour);
-const squareFive  = new Imagen (imgFive);
 
 // API FACEBOOK
 let   band     = 0;
