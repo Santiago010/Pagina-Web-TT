@@ -1,90 +1,69 @@
-* {
-  box-sizing: border-box;
-}
-
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: whitesmoke;
   margin: 0;
+  padding: 0;
   border: 0;
-  font-size: 16px;
 }
-
+.titulo-principal{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
 .header{
+  display: flex;
   align-items: center;
-  align-content: center;
-  display:  flex;
-  background: black;
+  background: rgba(1, 1, 1, 0.9);
   width: 100%;
-  height: 100px;
-
+  height: auto;
 }
-
 .header__img{
-  width: 110px;
-  height: 100px;
-  margin-top: 1rem;
-  margin-inline-start:45rem ;
-
+  margin-left: 1.25em;
+  width: 5.31em;
+  height: 5.31em;
 }
-
-
 .menu {
-  /*margin-top: 2rem;*/
-  background: white;
-	/*border-top: 1px solid #000;
-	border-bottom: 1px solid #000;*/
 	display: flex;
   justify-content: space-between;
-  /*margin-bottom: 2rem;*/
 }
-
 .menu a {
-	padding: 10px;
+  width: 100%;
+	padding: 0.62em;
 	color: black;
-	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 400;
-	width: 100%;
 	text-align: center;
 	transition: 0.2s ease all;
-	font-size: 16px;
 }
-
 .menu a:hover {
-	background: black;
+	background: rgba(1, 1, 1, 0.9);
 	color: white;
 }
 .footer{
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  height: 100px;
   width: 100%;
+  font-size: 0.9em;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(1, 1, 1, 0.9);
   color:white;
-  background: black;
-}
-
-/* COMIENZA BANNER */
-.container-banner{
-  background-color: rgba(0, 0, 0, 0.0);
-  width: 100%;
-  height: 30em;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: center;  
 }
+.footer p{
+  margin: 0;
+  padding: 0.66em 0em;
+}
+.encuentranos{
+  display: flex;
+  flex-direction: column;
+}
+/* COMIENZA BANNER */
+
 .minicontainer{
-  overflow: hidden;
-  margin: 0.3125em;
-  width: 1720px;
-	height: 470px;
+  width: 100%;
+	height: 46.25em;
 
   cursor: pointer;
-	transition: 450ms all;
-	
   object-fit: cover;
 }
 
@@ -94,17 +73,13 @@ body{
   padding: 0; 
 
   width: 100%;
-  max-width: 340px;
+  max-width: 21.25em;
   height: auto;
 
   position: fixed;
   bottom: 0;
-  right: 15px;
-  z-index: 5;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  right: 1em;
+  z-index: 2;
 }
 .chat-button{
   width: 100%;
