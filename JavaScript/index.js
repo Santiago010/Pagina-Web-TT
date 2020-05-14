@@ -21,7 +21,7 @@ class Imagen {
         }
         changeSource (){
                 setTimeout ( () =>
-                { this.name.src = arrayImg[  Math.floor(Math.random()*7)  ] }, 4000 );
+                { this.name.src = arrayImg[  Math.floor(Math.random()*7)  ] }, 3000 );
         }
 }
 const squareOne   = new Imagen (imgOne);

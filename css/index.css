@@ -1,26 +1,28 @@
 *{
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 .titulo-principal{
   text-align: center;
   font-family: 'Lato', sans-serif;
-  color: white;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-top: 1.3em;
 }
 .header{
   display: flex;
   align-items: center;
-  background: black;
+  background: rgba(1, 1, 1, 0.9);
   width: 100%;
   height: auto;
 }
 .header__img{
-  margin-left: 1.25em;
+  margin-left: 2.5em;
   width: 5.31em;
   height: 5.31em;
 }
@@ -41,8 +43,8 @@ body{
 	transition: 0.2s ease all;
 }
 .menu a:hover {
-	background: black;
-	color: white;
+  background: whitesmoke;
+	color: black;
 }
 .footer{
   width: 100%;
@@ -67,7 +69,7 @@ body{
 
 .minicontainer{
   width: 100%;
-	height: 46.25em;
+	height: 33.2rem;
 
   cursor: pointer;
   object-fit: cover;
@@ -128,4 +130,3 @@ body{
     font-size: 12px;
   }
 }
-//animal

@@ -1,179 +1,186 @@
-/*/BODY*/
-* {
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: whitesmoke;
-    margin: 0;
-    border: 0;
-    font-size: 16px;
-  }
-  
-/*HEADER*/
-  .header{
-    align-items: center;
-    align-content: center;
-    display:  flex;
-    background: black;
-    width: 100%;
-    height: 100px;
-  
-  }
-  
-  .header__img{
-    width: 110px;
-    height: 100px;
-    margin-inline-start:45rem ;
-    margin-top: 1rem;
-  }
-  
-/*MENU*/
-  .menu {
-    /*margin-top: 2rem;*/
-    background: white;
-      /*border-top: 1px solid #000;
-      border-bottom: 1px solid #000;*/
-      display: flex;
-    justify-content: space-between;
-    /*margin-bottom: 2rem;*/
-    border-bottom: solid 1px black;
-  }
-  
-  .menu a {
-      padding: 10px;
-      color: black;
-      display: block;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 400;
-      width: 100%;
-      text-align: center;
-      transition: 0.2s ease all;
-      font-size: 16px;
-  }
-  
-  .menu a:hover {
-      background: black;
-      color: white;
-  }
-
-  /*CAROUSEL*/
-  .carousel{
-    width: 100%;
-    padding: 30px;
-    position: relative;
+/*Body*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("../docs/shapelined-_JBKdviweXI-unsplash.jpg")
 }
 
-.carousel-ico{
-    margin-top: 27px;
-    margin-left: 35px;
-    margin-right: 10px;
-    margin-bottom: auto;
-    width: 27x;
-    height: 27px;
+/*header*/
+.titulo-principal{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-top: 1.3em;
+  user-select: none;
+}
+.header{
+  display: flex;
+  align-items: center;
+  background: rgba(1, 1, 1, 0.9);
+  width: 100%;
+  height: auto;
+}
+.header__img{
+  margin-left: 2.5em;
+  width: 5.31em;
+  height: 5.31em;
 }
 
-.carousel-parrafo{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #ffffff; 
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1.5rem; 
-    background: black; 
-    margin: 0 0 25px; 
-    overflow: hidden; 
-    padding: 0.1rem; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
+/*menu*/
+.menuu {
+  margin-top: 0.0625em;
+	display: flex;
+  justify-content: space-between;
+}
+.menuu a {
+  width: 100%;
+  font-size: 0.955em;
+  padding: 0.62em;
+  background: rgba(1, 1, 1, 0.9);
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	transition: 0.2s ease all;
+}
+.menuu a:hover {
+  background: whitesmoke;
+	color: black;
 }
 
+/*carousel*/
 
-.carousel__container{
-    white-space: nowrap;
-    margin: 1rem 1rem 1rem 2rem;
-}
-.carousel-items{
-    width: 425px;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
-    margin-top: 2rem;
-    transform-origin: center;
-    margin-left: 1.5rem;
-    margin-right: 0.5rem;
-}
-.carousel-items:hover ~ .carousel-items{
-    transform: translate3d(100px,0,0,0);
-}
-.carousel__container:hover .carousel-items{
-    opacity: 0.2;
-}
-.carousel__container:hover .carousel-items:hover{
-    transform: scale(1.3);
-    opacity: 1;
-}
-.carousel-items__img{
-    width: 425px;
-    height: 300px;
-    object-fit: cover;
+.subtitulo{
+  margin: 0;
+  color: black;
+  display: inline;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-/*FOOTER*/
+.linea-division{
+  width: 80%;
+  height: 2px;
+  background-color: rgba(1, 1, 1, 0.9);
+}
+
+.productos{
+  color:whitesmoke;
+  margin: 7px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 0;
+}
+
+/*estilos de materialize para el carousel*/
+
+.carousel{
+  min-height: 250px;
+}
+.carousel .carousel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 400px;
+  height: 300px;
+}
+
+.carousel .carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/*footer*/
 .footer{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    color:white;
-    background: black;
-  }
+  width: 100%;
+  font-size: 0.9em;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(1, 1, 1, 0.9);
+  color:white;
 
-  
-  /* API FACEBOOK */
-  .chat-container{
-    margin: 0;
-    padding: 0; 
-  
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-  
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    z-index: 5;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+.footer p{
+  margin: 0;
+  padding: 0.66em 0em;
+}
+.encuentranos{
+  display: flex;
+  flex-direction: column;
+}
+
+/* API FACEBOOK */
+.chat-container{
+  margin: 0;
+  padding: 0; 
+
+  width: 100%;
+  max-width: 21.25em;
+  height: auto;
+
+  position: fixed;
+  bottom: 0;
+  left: 0.625em;
+  z-index: 2;
+}
+.chat-button{
+  width: 100%;
+  max-width: 4.45em;
+  max-height: 4.75em;
+
+  margin: 0;
+  padding: 0.4375em;
+  border-radius: 1.5em;
+
+  background: white;
+  cursor: pointer;
+}
+.chat-content{
+  margin:0;
+  padding: 0;
+  background: white;
+  display: none;
+}
+.mostrarOcultar{
+  display: block;
+}
+
+/*ressponsibe design*/
+@media (max-width: 1200px) {
+  body{
+    font-size: 14px;
   }
-  .chat-button{
-    width: 100%;
-    max-width: 4.45em;
-    max-height: 4.75em;
-  
-    margin: 0;
-    padding: 0.4375em;
-    border-radius: 1.5em;
-  
-    background: white;
-    cursor: pointer;
+}
+@media (max-width: 992px) {
+  body{
+    font-size: 12px;
   }
-  .chat-content{
-    margin:0;
-    padding: 0;
-    background: white;
-    display: none;
+}
+@media (max-width: 768px) {
+  body{
+    font-size: 11px;
   }
-  .mostrarOcultar{
-    display: block;
+}
+@media (max-width: 576px) {
+  body{
+    font-size: 12px;
   }
-  
-  
+}

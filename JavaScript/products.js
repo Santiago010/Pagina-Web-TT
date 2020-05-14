@@ -1,4 +1,4 @@
-const arrayImg = ['../docs/image1.jpeg',
+/*const arrayImg = ['../docs/image1.jpeg',
                   '../docs/image2.jpeg',
                   '../docs/image3.jpeg',
                   '../docs/image4.jpeg',
@@ -26,7 +26,26 @@ class Imgs {
                 }, 2000 );
         }
 }
-const squares = new Imgs (imgs);
+
+const squares = new Imgs (imgs);*/
+
+
+/*carousel*/
+document.addEventListener('DOMContentLoaded', () => {
+        const elementosCarousel = document.querySelectorAll('.carousel');
+        M.Carousel.init(elementosCarousel, {
+                duration: 150,
+                dist: -100,
+                shift: 5,
+                padding: 5,
+                numVisible : 3,
+                indicators:true,
+                noWrap : false,
+        });
+});
+
+
+
 // API FACEBOOK
 let   band     = 0;
 const chat     = document.getElementById('chat');
