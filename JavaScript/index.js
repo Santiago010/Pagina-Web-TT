@@ -1,4 +1,3 @@
-
 const imgOne = document.getElementById('mini_one');
 
 const arrayImg = ['../docs/image1.jpeg',
@@ -8,7 +7,6 @@ const arrayImg = ['../docs/image1.jpeg',
                   '../docs/image5.jpeg',
                   '../docs/image6.jpeg', 
                   '../docs/image7.jpeg'];
-
 class Imagen {
         constructor(name){
                 this.name = name;

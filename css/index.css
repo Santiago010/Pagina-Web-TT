@@ -1,40 +1,43 @@
 *{
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
-}
-body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .titulo-principal{
-  text-align: center;
+  margin: 0;
   font-family: 'Lato', sans-serif;
   color: whitesmoke;
   font-size: 1.5rem;
-  margin-top: 1.3em;
+  font-weight: 500;
 }
 .header{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
   background: rgba(1, 1, 1, 0.9);
   width: 100%;
   height: auto;
 }
 .header__img{
-  margin-left: 2.5em;
-  width: 5.31em;
-  height: 5.31em;
+  width: 10.31rem;
+  height: 6rem;
+  margin: 0 -35px -35px -10px;
 }
 .menu {
-  margin-top: 0.0625em;
+  margin-top: 0.5px;
 	display: flex;
   justify-content: space-between;
 }
 .menu a {
   width: 100%;
-  font-size: 0.955em;
-  padding: 0.62em;
+  font-size: 0.935rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  padding: 0.62rem;
   background: rgba(1, 1, 1, 0.9);
 	color: white;
 	text-decoration: none;
@@ -44,11 +47,12 @@ body{
 }
 .menu a:hover {
   background: whitesmoke;
+  font-weight: 600;
 	color: black;
 }
 .footer{
   width: 100%;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   background: rgba(1, 1, 1, 0.9);
   color:white;
@@ -59,13 +63,13 @@ body{
 }
 .footer p{
   margin: 0;
-  padding: 0.66em 0em;
+  padding: 0.66rem 0;
 }
 .encuentranos{
   display: flex;
   flex-direction: column;
 }
-/* COMIENZA BANNER */
+/* BANNER */
 
 .minicontainer{
   width: 100%;
@@ -80,23 +84,23 @@ body{
   margin: 0;
   padding: 0; 
 
-  width: 100%;
-  max-width: 21.25em;
-  height: auto;
-
   position: fixed;
   bottom: 0;
-  left: 0.625em;
+  left: 16px;
   z-index: 2;
+
+  width: 100%;
+  max-width: 21.25rem;
+  height: auto;
 }
 .chat-button{
   width: 100%;
-  max-width: 4.45em;
-  max-height: 4.75em;
+  max-width: 4.45rem;
+  max-height: 4.75rem;
 
   margin: 0;
-  padding: 0.4375em;
-  border-radius: 1.5em;
+  padding: 7px;
+  border-radius: 23px;
 
   background: white;
   cursor: pointer;
@@ -110,23 +114,6 @@ body{
 .mostrarOcultar{
   display: block;
 }
-@media (max-width: 1200px) {
-  body{
-    font-size: 14px;
-  }
-}
-@media (max-width: 992px) {
-  body{
-    font-size: 12px;
-  }
-}
-@media (max-width: 768px) {
-  body{
-    font-size: 11px;
-  }
-}
-@media (max-width: 576px) {
-  body{
-    font-size: 12px;
-  }
-}
+
+
+

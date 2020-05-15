@@ -1,57 +1,59 @@
-/*Body*/
 *{
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
-}
-body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url("../docs/shapelined-_JBKdviweXI-unsplash.jpg")
+  background-image: url("../docs/fondoProductos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/*header*/
 .titulo-principal{
-  text-align: center;
+  margin: 0;
   font-family: 'Lato', sans-serif;
   color: whitesmoke;
   font-size: 1.5rem;
-  margin-top: 1.3em;
-  user-select: none;
 }
 .header{
+  padding: 15px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   background: rgba(1, 1, 1, 0.9);
   width: 100%;
   height: auto;
 }
 .header__img{
-  margin-left: 2.5em;
-  width: 5.31em;
-  height: 5.31em;
+  width: 10.01em;
+  height: 6em;
+  margin: 0 -25px -30px 0;
 }
-
-/*menu*/
-.menuu {
-  margin-top: 0.0625em;
+.menu {
+  background: rgba(1, 1, 1, 0.9);
+  height: 38px;
+  margin-top: 1px;
+  padding: 0 0 30px 0;
 	display: flex;
   justify-content: space-between;
 }
-.menuu a {
+.menu a {
   width: 100%;
-  font-size: 0.955em;
-  padding: 0.62em;
-  background: rgba(1, 1, 1, 0.9);
+  height: 38px;
+  font-size: 0.855em;
+  margin: -15px 0 0 0 ;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-align: center;
+  text-align: center;
+  vertical-align: center;
 	transition: 0.2s ease all;
 }
-.menuu a:hover {
+.menu a:hover {
   background: whitesmoke;
-	color: black;
+  color: black;
+  margin: 0 0 0 0 ;
 }
 
 /*carousel*/
@@ -60,7 +62,7 @@ body{
   margin: 0;
   color: black;
   display: inline;
-  font-size: 25px;
+  font-size: 1.56em;
   font-weight: 500;
   text-transform: uppercase;
 }
