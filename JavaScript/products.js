@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 indicators:true,
                 noWrap : false,
         });
+//DESCRIPTION       
+        const description = document.getElementById('description');
+        const imgPrincipal = document.querySelector('.carousel');
+        console.log(imgPrincipal)
+        //console.log(imgPrincipal.src);
 });
 // API FACEBOOK
 let   band     = 0;
@@ -26,3 +31,4 @@ function mostrarOcultar () {
                 band = 0;
         }
 }
+
