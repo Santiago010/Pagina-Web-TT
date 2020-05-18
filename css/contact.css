@@ -88,12 +88,21 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    color: #fff;
 }
 .reciclado{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.ico-footer_reciclaje{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+
 ul{
     padding: 0;
 }

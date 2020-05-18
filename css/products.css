@@ -7,7 +7,7 @@ body{
   padding: 0;
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url("../docs/a.jpg");
+  background-image: url("../docs/backgrounds/wpp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -84,6 +84,7 @@ body{
 }
 
 #description{
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: cursive;
   font-size: 1.5rem;
   margin-left: 27px;
