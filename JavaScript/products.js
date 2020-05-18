@@ -15,7 +15,7 @@ var imagen1C = document.getElementById('1imagenC');
 var imagen2C = document.getElementById('2imagenC');
 var imagen3C = document.getElementById('3imagenC');
 
-boton1 = document.addEventListener("click", function(){
+boton1.addEventListener("click", function(){
         console.log("se esta ejecutando la funcion del boton cunas");
         descripcionC.textContent = "en estas imagenes se puede observar unas pequeñas muestras del trabajo que realizamos con cunas";
         subtituloProductosC.textContent = "Productos";
@@ -26,7 +26,7 @@ boton1 = document.addEventListener("click", function(){
 });
 
 
-boton2 = document.addEventListener("click", function(){
+boton2.addEventListener("click", function(){
         console.log("se esta ejecutando la funcion del boton exhibidores");
         descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con exhibidores";
         subtituloProductosC.textContent = "Productos";
