@@ -7,7 +7,7 @@ body{
   padding: 0;
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url("../docs/wi.jpg");
+  background-image: url("../docs/a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -84,17 +84,19 @@ body{
 }
 
 #description{
+  font-family: cursive;
+  font-size: 1.5rem;
   margin-left: 27px;
   padding: 10px;
   width: 25%;
   height: auto;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.1);
   color: black;
   text-align: center;
 }
 .contenedorPrincipal{
   display: flex;
+  height: 37rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -142,8 +144,8 @@ body{
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: 400px;
-  height: 300px;
+  width: 550px;
+  height: 400px;
 }
 
 .carousel .carousel-item img{
@@ -156,6 +158,8 @@ body{
   z-index: -1;
   border-radius: 20px;
 }
+
+
 
 /*footer*/
 .footer{

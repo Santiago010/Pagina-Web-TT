@@ -20,9 +20,9 @@ boton1.addEventListener("click", function(){
         descripcionC.textContent = "en estas imagenes se puede observar unas pequeñas muestras del trabajo que realizamos con cunas";
         subtituloProductosC.textContent = "Productos";
         tituloProductosC.textContent = "Cunas";
-        imagen1C.textContent = '../docs/imagenesProducts/cunas/imgC1.jpg';
-        imagen2C.textContent = '../docs/imagenesProducts/cunas/imgC2.jpg';
-        imagen3C.textContent = '../docs/imagenesProducts/cunas/imgC3.jpg';
+        imagen1C.src = '../docs/imagenesProducts/cunas/imgC1.jpg';
+        imagen2C.src = '../docs/imagenesProducts/cunas/imgC2.jpg';
+        imagen3C.src = '../docs/imagenesProducts/cunas/imgC3.jpg';
 });
 
 
@@ -31,19 +31,68 @@ boton2.addEventListener("click", function(){
         descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con exhibidores";
         subtituloProductosC.textContent = "Productos";
         tituloProductosC.textContent = "Exhibidores";
-        imagen1C.textContent = '../docs/imagenesProducts/exhibidores/imgE1.jpg';
-        imagen2C.textContent = '../docs/image2.jpeg';
-        imagen3C.textContent = '../docs/image3.jpeg';
+        imagen1C.src = '../docs/imagenesProducts/exhibidores/imgE1.jpg';
+        imagen2C.src = '../docs/imagenesProducts/exhibidores/imgE1.jpg';
+        imagen3C.src = '../docs/imagenesProducts/exhibidores/imgE1.jpg';
 });
 
+boton3.addEventListener("click",function(){
+        console.log("se esta ejecutando la funcion del boton Probadores");
+        descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con Probadores";
+        subtituloProductosC.textContent = "Productos";
+        tituloProductosC.textContent = "Probadores";
+        imagen1C.src = '../docs/imagenesProducts/probadores/imgp1.jpg';
+        imagen2C.src = '../docs/imagenesProducts/probadores/imgp2.jpg';
+        imagen3C.src = '../docs/imagenesProducts/probadores/imgp3.jpg';  
+});
+
+boton4.addEventListener("click", function(){
+        console.log("se esta ejecutando la funcion del boton Estuches");
+        descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con Estuches";
+        subtituloProductosC.textContent = "Productos";
+        tituloProductosC.textContent = "Estuches";
+        imagen1C.src = '../docs/imagenesProducts/estuches/imgE1.jpg';
+        imagen2C.src = '../docs/imagenesProducts/estuches/imgE2.jpg';
+        imagen3C.src = '../docs/imagenesProducts/estuches/imgE1.jpg'; 
+});
+
+boton5.addEventListener("click", function(){
+        console.log("se esta ejecutando la funcion del boton Empaques Blister");
+        descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con Empaques Blister";
+        subtituloProductosC.textContent = "Productos";
+        tituloProductosC.textContent = "Blister";
+        imagen1C.src = '../docs/imagenesProducts/empaquesBlister/';
+        imagen2C.src = '../docs/imagenesProducts/empaquesBlister/';
+        imagen3C.src = '../docs/imagenesProducts/empaquesBlister/';   
+});
+
+boton6.addEventListener("click", function(){
+        console.log("se esta ejecutando la funcion del boton Liners Acetatos");
+        descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con Liners Acetatos";
+        subtituloProductosC.textContent = "Productos";
+        tituloProductosC.textContent = "Liners & Acetatos";
+        imagen1C.src = '../docs/imagenesProducts/acetatosLiners/';
+        imagen2C.src = '../docs/imagenesProducts/acetatosLiners/';
+        imagen3C.src = '../docs/imagenesProducts/acetatosLiners/'; 
+});
+
+boton7.addEventListener("click", function(){
+        console.log("se esta ejecutando la funcion del boton Moldes");
+        descripcionC.textContent = "en estas imagenes se puede observa unas pequeñas muestras del trabajo que realizamos con moldes";
+        subtituloProductosC.textContent = "Productos";
+        tituloProductosC.textContent = "Moldes";
+        imagen1C.src = '../docs/imagenesProducts/moldes/imagen1p.jpg';
+        imagen2C.src = '../docs/imagenesProducts/moldes/imagen2p.jpg';
+        imagen3C.src = '../docs/imagenesProducts/moldes/imagen1p.jpg';    
+});
 
 
 // CAROUSEL
 document.addEventListener('DOMContentLoaded', () => {
         const elementosCarousel = document.querySelectorAll('.carousel');
         M.Carousel.init(elementosCarousel, {
-                duration: 200,
-                dist: -100,
+                duration: 150,
+                dist: -200,
                 shift: 5,
                 padding: 5,
                 numVisible : 3,
