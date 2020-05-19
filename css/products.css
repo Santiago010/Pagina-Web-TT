@@ -7,9 +7,10 @@ body{
   padding: 0;
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   background-image: url("../docs/backgrounds/wpp.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 .titulo-principal{
   margin: 0;
@@ -29,18 +30,18 @@ body{
 .header__img{
   width: 10.31rem;
   height: 6rem;
-  margin: 0 -35px -35px -10px;
+  margin: 0 -2.1875em -2.1875em -0.625em;
 }
 .menu {
   background: rgba(1, 1, 1, 0.9);
-  height: 35px;
+  height: 2.1875em;
   margin-top: 1px;
 	display: flex;
   justify-content: space-between;
 }
 .menu a {
   width: 100%;
-  height: 38px;
+  height: 2.375em;
   font-size: 0.855em;
   line-height: 250%;
 	color: white;
@@ -71,7 +72,7 @@ body{
   text-decoration: none;
   background-color: transparent;
   transition: color 1s, background 1s;
-  border-bottom: 0.1rem solid rgba(1, 1, 1, 0.9);
+  border-bottom: 1.6px solid rgba(1, 1, 1, 0.9);
 }
 
 .btn-ghost:hover{
@@ -83,10 +84,10 @@ body{
   box-shadow: inset 0 0 2rem white;
 }
 
-#description{
+.description{
   background-color: rgba(1, 1, 1, 0.1);
-  font-family: cursive;
-  font-size: 1.5rem;
+  font-family: 'Lora', serif;
+  font-size: 17px;
   margin-left: 27px;
   padding: 10px;
   width: 25%;
@@ -128,7 +129,7 @@ body{
 .productos{
   color:whitesmoke;
   margin: 7px 0;
-  font-size: 25px;
+  font-size: 1.5625em;
   font-weight: 600;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
   margin-top: 0;
@@ -145,8 +146,8 @@ body{
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: 550px;
-  height: 400px;
+  width: 34.375em;
+  height: 25em;
 }
 
 .carousel .carousel-item img{
@@ -175,7 +176,7 @@ body{
 }
 .footer p{
   margin: 0;
-  padding: 0.66rem 0;
+  padding: 10.5px 0;
 }
 
 .contacto{
@@ -231,24 +232,3 @@ body{
   display: block;
 }
 
-/*ressponsibe design*/
-@media (max-width: 1200px) {
-  body{
-    font-size: 14px;
-  }
-}
-@media (max-width: 992px) {
-  body{
-    font-size: 12px;
-  }
-}
-@media (max-width: 768px) {
-  body{
-    font-size: 11px;
-  }
-}
-@media (max-width: 576px) {
-  body{
-    font-size: 12px;
-  }
-}
