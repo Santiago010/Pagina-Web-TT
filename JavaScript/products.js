@@ -33,25 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const URL   = '../docs/imagenesProducts/';
         const rutas = [
-        /* CUNAS */             [ `${URL}cunas/imgC1.jpg`, 
-                                  `${URL}cunas/imgC2.jpg`, 
-                                  `${URL}cunas/imgC3.jpg` ],
+        /* CUNAS */             [ `${URL}cunas/img1C.JPG`, 
+                                  `${URL}cunas/img2C.JPG`, 
+                                  `${URL}cunas/img3C.JPG` ],
 
-        /* EXHIBIDORES */       [ `${URL}exhibidores/imgE1.jpg` ],
+        /* EXHIBIDORES */       [ `${URL}exhibidores/img1EX.JPG`,
+                                `${URL}exhibidores/img2EX.JPG`
+                                ],
 
-        /* PROBADORES */        [ `${URL}probadores/imgP1.jpg` , 
-                                  `${URL}probadores/imgP2.jpg`, 
-                                  `${URL}probadores/imgP3.jpg` ],
+        /* PROBADORES */        [ `${URL}probadores/img1P.JPG` , 
+                                  `${URL}probadores/img2P.JPG`, 
+                                  `${URL}probadores/img3P.JPG` ],
 
-        /* ESTUCHES */          [ `${URL}estuches/imgE1.jpg`, 
-                                  `${URL}estuches/imgE2.jpg` ],
+        /* ESTUCHES */          [ `${URL}estuches/img1E.JPG`, 
+                                  `${URL}estuches/img2E.JPG`,
+                                  `${URL}estuches/img3E.JPG`
+                                 ],
 
-        /* EMPAQUES BLISTER */  [],
+        /* EMPAQUES BLISTER */  [`${URL}empaquesBlister/img1B.JPG`],
 
-        /* MOLDES */            [`${URL}moldes/imagen1P.jpg`, 
-                                 `${URL}moldes/imagen2P.jpg`,
-                                 `${URL}moldes/imagen3P.jpg`,
-                                ]
+        /* MOLDES */            [`${URL}moldes/img1M.JPG` 
+                                ],
+        /* OTROS */             [``]
         ]
         
         botones.forEach( (elemento, index) => elemento.addEventListener('click', ()=>{

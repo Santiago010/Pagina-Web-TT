@@ -8,7 +8,7 @@ body{
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-  background-image: url("../docs/backgrounds/wpp.jpg");
+  background-image: url("../docs/backgrounds/wpp2.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -85,8 +85,8 @@ body{
 }
 
 .description{
-  background-color: rgba(1, 1, 1, 0.1);
   font-family: 'Lora', serif;
+  font-weight: 600;
   font-size: 17px;
   margin-left: 27px;
   padding: 10px;
@@ -111,20 +111,6 @@ body{
 }
 /*carousel*/
 
-.subtitulo{
-  margin: 0;
-  color: black;
-  display: inline;
-  font-size: 1.56em;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.linea-division{
-  width: 80%;
-  height: 2px;
-  background-color: rgba(1, 1, 1, 0.9);
-}
 
 .productos{
   color:whitesmoke;
