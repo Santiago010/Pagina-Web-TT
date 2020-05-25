@@ -1,7 +1,4 @@
-
-
-// CAROUSEL
-// >>>>>>> 2a66d37476852e2f4078b35d2f2f5ea60938079d
+import './API_FACEBOOK.js'
 document.addEventListener('DOMContentLoaded', () => {
 
         // CAROUSEL
@@ -33,28 +30,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const URL   = '../docs/imagenesProducts/';
         const rutas = [
-        /* CUNAS */             [ `${URL}cunas/img1C.JPG`, 
-                                  `${URL}cunas/img2C.JPG`, 
-                                  `${URL}cunas/img3C.JPG` ],
+        // /* CUNAS */             [ `${URL}cunas/imgC1.jpg`, 
+        //                           `${URL}cunas/imgC2.jpg`, 
+        //                           `${URL}cunas/imgC3.jpg` ],
 
-        /* EXHIBIDORES */       [ `${URL}exhibidores/img1EX.JPG`,
-                                `${URL}exhibidores/img2EX.JPG`
-                                ],
+        // /* EXHIBIDORES */       [ `${URL}exhibidores/imgE1.jpg` ],
 
-        /* PROBADORES */        [ `${URL}probadores/img1P.JPG` , 
-                                  `${URL}probadores/img2P.JPG`, 
-                                  `${URL}probadores/img3P.JPG` ],
+        // /* PROBADORES */        [ `${URL}probadores/imgP1.jpg` , 
+        //                           `${URL}probadores/imgP2.jpg`, 
+        //                           `${URL}probadores/imgP3.jpg` ],
 
-        /* ESTUCHES */          [ `${URL}estuches/img1E.JPG`, 
-                                  `${URL}estuches/img2E.JPG`,
-                                  `${URL}estuches/img3E.JPG`
-                                 ],
+        // /* ESTUCHES */          [ `${URL}estuches/imgE1.jpg`, 
+        //                           `${URL}estuches/imgE2.jpg` ],
 
-        /* EMPAQUES BLISTER */  [`${URL}empaquesBlister/img1B.JPG`],
+        // /* EMPAQUES BLISTER */  [],
 
-        /* MOLDES */            [`${URL}moldes/img1M.JPG` 
-                                ],
-        /* OTROS */             [``]
+        // /* MOLDES */            [`${URL}moldes/imagen1P.jpg`, 
+        //                          `${URL}moldes/imagen2P.jpg`,
+        //                          `${URL}moldes/imagen3P.jpg`,
+        //                         ]
         ]
         
         botones.forEach( (elemento, index) => elemento.addEventListener('click', ()=>{
@@ -64,23 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 imagenes.forEach( (elemento3, index2) => elemento3.setAttribute('src', rutas[index][index2]));
 
         }));
-
-        // API FACEBOOK
-        let   band     = 0;
-        const chat     = document.getElementById('chat');
-        const buttonFb = document.getElementById('buttonFb');
-        buttonFb.addEventListener('click', mostrarOcultar);
-
-        function mostrarOcultar () {
-                if(band === 0){
-                        chat.classList.add('mostrarOcultar');
-                        band = 1;
-                }else{
-                        chat.classList.remove('mostrarOcultar');
-                        band = 0;
-                }
-        }
-
 });
 
         

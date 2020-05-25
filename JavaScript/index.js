@@ -1,3 +1,5 @@
+import './API_FACEBOOK.js';
+
 const imgOne = document.getElementById('mini_one');
 
 const arrayImg = [
@@ -24,21 +26,8 @@ class Imagen {
 }
 const squareOne   = new Imagen (imgOne);
 
-// API FACEBOOK
-let   band     = 0;
-const chat     = document.getElementById('chat');
-const buttonFb = document.getElementById('buttonFb');
-      buttonFb.addEventListener('click', mostrarOcultar);
 
-function mostrarOcultar () {
-        if(band === 0){
-                chat.classList.add('mostrarOcultar');
-                band = 1;
-        }else{
-                chat.classList.remove('mostrarOcultar');
-                band = 0;
-        }
-}
+
 
 
 

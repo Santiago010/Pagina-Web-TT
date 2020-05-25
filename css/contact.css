@@ -32,7 +32,7 @@ body{
     position: absolute;
     z-index: -1;
     width:100%;
-    height: 700px;
+    height: 800px;
 }
 .titulo{
     text-align: center;
@@ -69,7 +69,7 @@ body{
 .contenido{
     width: 100%;
     height: 1000px;
-    margin-top: 800px;
+    margin-top: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +80,7 @@ body{
 }
 .footer{
     width:20%;
-    margin-top: 700px;
+    margin-top: 800px;
     height: auto;
     padding: 20px;
     background: rgba(1, 1, 1, 0.9);
