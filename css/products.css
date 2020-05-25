@@ -1,8 +1,9 @@
-*{
+* {
   box-sizing: border-box;
   user-select: none;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,14 +13,16 @@ body{
   background-repeat: no-repeat;
   background-size: cover;  */
 }
-.titulo-principal{
+
+.titulo-principal {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: whitesmoke;
   font-size: 1.5rem;
   font-weight: 600;
 }
-.header{
+
+.header {
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -27,42 +30,46 @@ body{
   width: 100%;
   height: 80px;
 }
-.header__img{
+
+.header__img {
   width: 10.31rem;
   height: 6rem;
   margin: 0 -2.1875em -2.1875em -0.625em;
 }
+
 .menu {
   background: rgba(1, 1, 1, 0.9);
   height: 2.1875em;
   margin-top: 1px;
-	display: flex;
+  display: flex;
   justify-content: space-between;
 }
+
 .menu a {
   width: 100%;
   height: 2.375em;
   font-size: 0.855em;
   line-height: 250%;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
-	transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
+
 .menu a:hover {
   background: whitesmoke;
   color: black;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
 
-.btn-ghost{
+.btn-ghost {
   position: relative;
   display: inline-block;
   padding: 1rem 1rem 1rem 1rem;
@@ -75,16 +82,16 @@ body{
   border-bottom: 1.6px solid rgba(1, 1, 1, 0.9);
 }
 
-.btn-ghost:hover{
+.btn-ghost:hover {
   color: white;
   background-color: rgba(1, 1, 1, 0.9);
 }
 
-.btn-ghost:active{
+.btn-ghost:active {
   box-shadow: inset 0 0 2rem white;
 }
 
-.description{
+.description {
   font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 17px;
@@ -93,27 +100,29 @@ body{
   width: 25%;
   height: auto;
   border-radius: 20px;
-  color: black ;
+  color: black;
   text-align: center;
 }
-.contenedorPrincipal{
+
+.contenedorPrincipal {
   display: flex;
   height: 37rem;
   justify-content: space-between;
   align-items: center;
 }
 
-.contenedorSecundario{
+.contenedorSecundario {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction:  row-reverse;
+  flex-direction: row-reverse;
 }
+
 /*carousel*/
 
 
-.productos{
-  color:whitesmoke;
+.productos {
+  color: whitesmoke;
   margin: 7px 0;
   font-size: 1.5625em;
   font-weight: 600;
@@ -123,10 +132,11 @@ body{
 
 /*estilos de materialize para el carousel*/
 
-.carousel{
+.carousel {
   min-height: 250px;
 }
-.carousel .carousel-item{
+
+.carousel .carousel-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +146,7 @@ body{
   height: 25em;
 }
 
-.carousel .carousel-item img{
+.carousel .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -150,34 +160,35 @@ body{
 
 
 /*footer*/
-.footer{
+.footer {
   width: 100%;
   font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   background: rgba(1, 1, 1, 0.9);
-  color:white;
+  color: white;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;  
+  align-items: center;
 }
-.footer p{
+
+.footer p {
   margin: 0;
   padding: 10.5px 0;
 }
 
-.contacto{
+.contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.reciclado{
+.reciclado {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.ico-footer_reciclaje{
+.ico-footer_reciclaje {
   width: 3.5rem;
   height: 3.5rem;
 }

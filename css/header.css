@@ -1,0 +1,54 @@
+.titulo-principal {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.LTDA {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    background: rgba(1, 1, 1, 0.9);
+    width: 100%;
+    height: auto;
+}
+
+.header__img {
+    width: 10.31rem;
+    height: 6rem;
+    margin: 0 -35px -35px -10px;
+}
+
+.menu {
+    margin-top: 0.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    width: 100%;
+    font-size: 0.935rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    padding: 0.62rem;
+    background: rgba(1, 1, 1, 0.9);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s ease all;
+}
+
+.menu a:hover {
+    background: whitesmoke;
+    font-weight: 600;
+    color: black;
+}

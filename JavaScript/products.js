@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 imagenes.forEach( (elemento3, index2) => elemento3.setAttribute('src', rutas[index][index2]));
 
         }));
+        document.getElementById('otros').addEventListener('click', () => window.open( '../views/others.html' ) )
 });
 
         
