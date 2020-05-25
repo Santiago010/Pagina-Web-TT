@@ -8,9 +8,9 @@ body{
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-  background-image: url("../docs/backgrounds/wpp.jpg");
+  /* background-image: url("../docs/backgrounds/wpp.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;  */
 }
 .titulo-principal{
   margin: 0;
@@ -196,39 +196,4 @@ body{
   height: 3.5rem;
 }
 
-/* API FACEBOOK */
-.chat-container{
-  margin: 0;
-  padding: 0; 
-
-  width: 100%;
-  max-width: 21.25em;
-  height: auto;
-
-  position: fixed;
-  bottom: 0;
-  left: 0.625em;
-  z-index: 2;
-}
-.chat-button{
-  width: 100%;
-  max-width: 3.5em;
-  max-height: 3.5em;
-
-  margin: 0;
-  padding: 0.4375em;
-  border-radius: 1.5em;
-
-  background: white;
-  cursor: pointer;
-}
-.chat-content{
-  margin:0;
-  padding: 0;
-  background: white;
-  display: none;
-}
-.mostrarOcultar{
-  display: block;
-}
 
