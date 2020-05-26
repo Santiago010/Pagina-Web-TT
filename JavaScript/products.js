@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tituloPrincipal = [ 'Cunas', 'Exhibidores', 'Probadores', 'Estuches', 'Empaques Blister', 'Moldes' ];  
 
         const URL   = '../docs/imagenesProducts/';
+
         const rutas = [
                 //imagenes productos cunas
                 [`${URL}cunas/img1C.JPG`,

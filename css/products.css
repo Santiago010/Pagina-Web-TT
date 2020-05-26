@@ -9,9 +9,9 @@ body {
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-  /* background-image: url("../docs/backgrounds/wpp.jpg");
+   background-image: url("../docs/backgrounds/wpp2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;  */
+  background-size: cover; 
 }
 
 .titulo-principal {
@@ -147,14 +147,14 @@ body {
 }
 
 .carousel .carousel-item img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 
