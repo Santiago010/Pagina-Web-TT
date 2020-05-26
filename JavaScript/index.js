@@ -26,6 +26,14 @@ class Imagen {
 }
 const squareOne   = new Imagen (imgOne);
 
+//SERVICE WORKER
+if ( 'serviceWorker' in navigator ) {
+        navigator.serviceWorker.register( '../sw.js' )
+        .catch( error => console.log( error.message ) );
+}
+
+
+
 
 
 
