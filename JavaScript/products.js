@@ -30,25 +30,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const URL   = '../docs/imagenesProducts/';
         const rutas = [
-        // /* CUNAS */             [ `${URL}cunas/imgC1.jpg`, 
-        //                           `${URL}cunas/imgC2.jpg`, 
-        //                           `${URL}cunas/imgC3.jpg` ],
+                //imagenes productos cunas
+                [`${URL}cunas/img1C.JPG`,
+                `${URL}cunas/img2C.JPG`,
+                `${URL}cunas/img3C.JPG`],
 
-        // /* EXHIBIDORES */       [ `${URL}exhibidores/imgE1.jpg` ],
+                //imagenes productos exhibidores
+                [`${URL}exhibidores/img1EX.JPG`,
+                `${URL}exhibidores/img2EX.JPG`,
+                /*`${URL}exhibidores/img3EX.JPG`*/],
 
-        // /* PROBADORES */        [ `${URL}probadores/imgP1.jpg` , 
-        //                           `${URL}probadores/imgP2.jpg`, 
-        //                           `${URL}probadores/imgP3.jpg` ],
+                //imagenes productos probadores
+                [`${URL}probadores/img1P.JPG`,
+                `${URL}probadores/img2P.JPG`,
+                `${URL}probadores/img3P.JPG`],
 
-        // /* ESTUCHES */          [ `${URL}estuches/imgE1.jpg`, 
-        //                           `${URL}estuches/imgE2.jpg` ],
+                //imagenes productos estuches
+                [`${URL}estuches/img1E.JPG`,
+                `${URL}estuches/img2E.JPG`,
+                `${URL}estuches/img3E.JPG`],
 
-        // /* EMPAQUES BLISTER */  [],
+                //imagenes productos empaques blister
+                [`${URL}empaquesBlister/img1B.JPG`,
+                /*`${URL}empaquesBlister/img2B.JPG`,*/
+                /*`${URL}empaquesBlister/img3B.JPG`*/],
 
-        // /* MOLDES */            [`${URL}moldes/imagen1P.jpg`, 
-        //                          `${URL}moldes/imagen2P.jpg`,
-        //                          `${URL}moldes/imagen3P.jpg`,
-        //                         ]
+                //imagenes productos moldes
+                [`${URL}moldes/img1M.JPG`,
+                /*`${URL}moldes/img2M.JPG`,*/
+                /*`${URL}moldes/img3M.JPG`*/],
         ]
         
         botones.forEach( (elemento, index) => elemento.addEventListener('click', ()=>{
@@ -58,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 imagenes.forEach( (elemento3, index2) => elemento3.setAttribute('src', rutas[index][index2]));
 
         }));
-        document.getElementById('otros').addEventListener('click', () => window.open( '../views/others.html' ) )
+        //document.getElementById('otros').addEventListener('click', () => window.open( '../views/others.html' ) );
 });
 
         
