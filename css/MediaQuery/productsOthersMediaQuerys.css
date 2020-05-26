@@ -1,0 +1,30 @@
+@media screen and(max-width: 1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+
+    .contenedor-imagenes .imagenes{
+        width: 48%;
+
+    }
+}
+
+@media screen and (max-width : 450px){
+    h1{
+        font-size: 22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+
+    .contenedor-imagenes .imagenes{
+        width: 80%;
+
+    }
+}
