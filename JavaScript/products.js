@@ -29,27 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const tituloPrincipal = [ 'Cunas', 'Exhibidores', 'Probadores', 'Estuches', 'Empaques Blister', 'Moldes' ];  
 
         const URL   = '../docs/imagenesProducts/';
-        /*const rutas = [
-                     [ `${URL}cunas/imgC1.jpg`, 
-                                   `${URL}cunas/imgC2.jpg`, 
-                                   `${URL}cunas/imgC3.jpg` ],
-
-                [ `${URL}exhibidores/imgE1.jpg` ],
-
-                [ `${URL}probadores/imgP1.jpg` , 
-                                   `${URL}probadores/imgP2.jpg`, 
-                                   `${URL}probadores/imgP3.jpg` ],
-
-                   [ `${URL}estuches/imgE1.jpg`, 
-                                   `${URL}estuches/imgE2.jpg` ],
-
-           [],
-
-                    [`${URL}moldes/imagen1P.jpg`, 
-                                  `${URL}moldes/imagen2P.jpg`,
-                                  `${URL}moldes/imagen3P.jpg`,
-                                 ]
-        ]*/
 
         const rutas = [
                 //imagenes productos cunas
