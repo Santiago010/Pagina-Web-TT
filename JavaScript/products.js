@@ -1,4 +1,4 @@
-import './API_FACEBOOK.js'
+import './API_FACEBOOK.js';
 document.addEventListener('DOMContentLoaded', () => {
 
         // CAROUSEL
@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const rutas = [
                 //imagenes productos cunas
-                [`${URL}cunas/img1C.JPG`,
-                `${URL}cunas/img2C.JPG`,
-                `${URL}cunas/img3C.JPG`],
+                [ `${URL}cunas/img1C.JPG`,
+                  `${URL}cunas/img2C.JPG`,
+                  `${URL}cunas/img3C.JPG`, ],
 
                 //imagenes productos exhibidores
                 [`${URL}exhibidores/img1EX.JPG`,
@@ -60,16 +60,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 [`${URL}moldes/img1M.JPG`,
                 /*`${URL}moldes/img2M.JPG`,*/
                 /*`${URL}moldes/img3M.JPG`*/],
-        ]
+        ];
         
+        const containerCarousel = document.getElementById('containerUno');
+        const containerGaleria  = document.getElementById('galeria');
+
         botones.forEach( (elemento, index) => elemento.addEventListener('click', ()=>{
-                
+                containerGaleria.classList.add('ocultar');
+                containerCarousel.classList.remove('ocultar');
                 description.textContent = descriptions[index];
                 titulos.forEach( elemento2 => elemento2.textContent = tituloPrincipal[index])
                 imagenes.forEach( (elemento3, index2) => elemento3.setAttribute('src', rutas[index][index2]));
 
         }));
-        //document.getElementById('otros').addEventListener('click', () => window.open( '../views/others.html' ) );
+
+        document.getElementById('otros').addEventListener( 'click', () => {
+                containerGaleria.classList.remove('ocultar');
+                containerCarousel.classList.add('ocultar');
+        } );
+        
 });
 
         
