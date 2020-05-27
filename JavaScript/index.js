@@ -1,4 +1,4 @@
-//import './API_FACEBOOK.js';
+import './API_FACEBOOK.js';
 
 const imgOne = document.getElementById('mini_one');
 
