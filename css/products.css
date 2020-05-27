@@ -139,6 +139,7 @@ body {
 
 /*estilos de materialize para el carousel*/
 
+
 .carousel {
   min-height: 250px;
 }
@@ -149,8 +150,6 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: 35rem;
-  height: 35rem;
 }
 
 .carousel .carousel-item img {
