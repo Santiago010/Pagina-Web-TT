@@ -149,8 +149,8 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: 35rem;
-  height: 35rem;
+  width: 1400px;
+  height: 1400px;
 }
 
 .carousel .carousel-item img {
