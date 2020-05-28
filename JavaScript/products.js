@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }));
         document.getElementById('otros').addEventListener('click', () => window.open( '../views/others.html' ) )
+        document.getElementById('dev').addEventListener('click', window.open('https://developers.google.com/web/fundamentals/primers/service-workers?hl=es'))
 });
 
         
