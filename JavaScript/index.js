@@ -28,6 +28,16 @@ class Imagen {
 }
 const squareOne   = new Imagen (imgOne);
 
+//SERVICE WORKER
+//VALIDAMOS QUE EL NAVEGADOR EN USO, TENGA SERVICE WORKER
+if ( 'serviceWorker' in navigator ) {
+        //REGISTRAMOS EL ARCHIVO DE LÓGICA PARA EL SERVICE WORKERS
+        navigator.serviceWorker.register( '../sw.js' )
+        .catch( error => console.log( error.message ) );
+}
+ 
+
+
 
 
 
