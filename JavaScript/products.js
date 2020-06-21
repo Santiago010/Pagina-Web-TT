@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerCarousel = document.getElementById('containerUno');
         const containerGaleria  = document.getElementById('galeria');
 
+
         botones.forEach( (elemento, index) => elemento.addEventListener('click', ()=>{
                 containerGaleria.classList.add('ocultar');
                 containerCarousel.classList.remove('ocultar');
@@ -77,8 +78,32 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('otros').addEventListener( 'click', () => {
                 containerGaleria.classList.remove('ocultar');
                 containerCarousel.classList.add('ocultar');
-        } );
+
+                const IB_Img = document.querySelectorAll('#wrapper > #IO_Img > img')
+
+                const lazyImg = (entries, observer) => {
+                        entries
+                        .filter(entry => entry.isIntersecting)
+                        .forEach((entry) => {
+                                const img = entry.target
+                                const src = img.getAttribute('data-lazy')
         
+                                img.setAttribute('src', src)
+                                observer.disconnect()
+                                console.log(`elementos cargados ${entries}`)
+                        })
+                }
+
+                
+
+                IB_Img.forEach((img) => {
+                        const observer = new IntersectionObserver(lazyImg, {
+                                threshold: .75
+                        })
+                        observer.observe(img)
+                })
+        } );
+
 });
 
         
