@@ -1,15 +1,12 @@
-/* MEDIA QUERYS */
 @media (max-width: 992px) {
-   html 
-   {
-      font-size: 10px;
-   }
-   body
-   {
+  html {
+    font-size: 10px;
+  }
+  body {
     grid-template-areas:
-    " poster  poster "
-    " sidebar sidebar"
-    " mision  mision "
-    " vision  vision ";
-   }
+      " poster  poster "
+      " sidebar sidebar"
+      " mision  mision "
+      " vision  vision ";
+  }
 }

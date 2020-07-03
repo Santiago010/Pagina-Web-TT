@@ -1,117 +1,99 @@
-//ESCUCHANDO EL EVENTO DE INSTALACIÓN DEL SERVICE WORKER
-const CACHE_NAME = 'cache_v1'
+const CACHE  = 'cache_v1'
 
-self.addEventListener( 'install', ev => {
-    ev.waitUntil( saveCache() )
-} )
-// GUARDANDO EL CACHE
-async function saveCache (){
-    const  cache = await caches.open( CACHE_NAME )
-    return cache.addAll( [
-        //index archivo padre
-        'index.html',
-        //archivos de views
-        '/views/contact.html',
-        '/views/products.html',
+const element = [
+    '/',
+    '/index.html',
+    '/css/MediaQuery/contactMediaQuery.css',
+    '/css/MediaQuery/indexMediaQuery.css',
+    '/css/MediaQuery/productsMediaQuerys.css',
+    '/css/Api-Facebook.css',
+    '/css/botones-redes-sociales.css',
+    '/css/contact.css',
+    '/css/footer.css',
+    '/css/galeriaImagenes.css',
+    '/css/header.css',
+    '/css/index.css',
+    '/css/materialize.css',
+    '/css/products.css',
+    '/docs/backgrounds/img_contact.jpg',
+    '/docs/backgrounds/imgP1.jpg',
+    '/docs/icons/favicon.ico',
+    '/docs/icons/iconF.ico',
+    '/docs/icons/iconFC.ico',
+    '/docs/icons/iconI.ico',
+    '/docs/icons/iconM.ico',
+    '/docs/imagenesIndex/imgB (1).jpg',
+    '/docs/imagenesIndex/imgB (2).jpg',
+    '/docs/imagenesIndex/imgB (3).jpg',
+    '/docs/imagenesIndex/imgB (4).jpg',
+    '/docs/imagenesProducts/cunas/img1C.JPG',
+    '/docs/imagenesProducts/cunas/img2C.JPG',
+    '/docs/imagenesProducts/cunas/img3C.JPG',
+    '/docs/imagenesProducts/empaquesBlister/img1B.JPG',
+    '/docs/imagenesProducts/empaquesBlister/img2B.JPG',
+    '/docs/imagenesProducts/empaquesBlister/img3B.JPG',
+    '/docs/imagenesProducts/estuches/img1E.JPG',
+    '/docs/imagenesProducts/estuches/img2E.JPG',
+    '/docs/imagenesProducts/estuches/img3E.JPG',
+    '/docs/imagenesProducts/exhibidores/img1EX.JPG',
+    '/docs/imagenesProducts/exhibidores/img2EX.JPG',
+    '/docs/imagenesProducts/exhibidores/img3EX.JPG',
+    '/docs/imagenesProducts/moldes/img1M.JPG',
+    '/docs/imagenesProducts/moldes/img2M.JPG',
+    '/docs/imagenesProducts/moldes/img3M.JPG',
+    '/docs/imagenesProducts/otrosProductos/img10O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img11O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img12O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img1O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img2O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img3O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img4O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img5O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img6O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img7O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img8O.JPG',
+    '/docs/imagenesProducts/otrosProductos/img9O.JPG',
+    '/docs/imagenesProducts/probadores/img1P.JPG',
+    '/docs/imagenesProducts/probadores/img2P.JPG',
+    '/docs/imagenesProducts/probadores/img3P.JPG',
+    '/JavaScript/API_FACEBOOK.js',
+    '/JavaScript/contact.js',
+    '/JavaScript/index.js',
+    '/JavaScript/materialize.js',
+    '/JavaScript/products.js',
+    '/views/contact.html',
+    '/views/products.html',
+]
 
-        //archivos JS
-        '/JavaScript/API_FACEBOOK.js',
-        '/JavaScript/contacto.js',
-        '/JavaScript/index.js',
-        '/JavaScript/materialize.js',
-        '/JavaScript/products.js',
+self.addEventListener('install', event => {
+    event.waitUntil(preCache())
+})
 
-        //archivos mediaQuerys
-        '/css/MediaQuery/indexMediaQuery.css',
-        '/css/MediaQuery/productsMediaQuerys.css',
-        
-        //archivos css
-        '/css/Api-Facebook.css',
-        '/css/botones-redes-sociales.css',
-        '/css/contact.css',
-        '/css/footer.css',
-        '/css/galeriaImagenes.css',
-        '/css/header.css',
-        '/css/index.css',
-        '/css/materialize.css',
-        '/css/products.css',
+self.addEventListener('fetch', event => {
+    const req = event.request
 
-        //archivos docs
+    if(req.method !== 'GET'){
+        return;
+    }
 
-        //backgrounds
-        '/docs/backgrounds/wa.jpg',
-        '/docs/backgrounds/wii.jpg',
-        '/docs/backgrounds/wpp2.jpg',
+    event.respondWith(cachedResponse(req))
 
-        //icons
-        '/docs/icons/api-fb.png',
-        '/docs/icons/iconfb.png',
-        '/docs/icons/iconig.png',
-        '/docs/icons/LOGO.png',
-        '/docs/icons/re.ico',
+    event.waitUntil(updateCache(req))
+})
 
-        //imagenes index
-        '/docs/imagenesIndex/image1.jpeg',
-        '/docs/imagenesIndex/image2.jpeg',
-        '/docs/imagenesIndex/image3.jpeg',
-        '/docs/imagenesIndex/image4.jpeg',
-        '/docs/imagenesIndex/image5.jpeg',
-
-        //imagenes productos cunas
-        '/docs/imagenesProducts/cunas/img1C.JPG',
-        '/docs/imagenesProducts/cunas/img2C.JPG',
-        '/docs/imagenesProducts/cunas/img3C.JPG',
-
-        //imagenes productos empaques Blister
-        '/docs/imagenesProducts/empaquesBlister/img1B.JPG',
-
-        //imagenes productos estuches
-        '/docs/imagenesProducts/estuches/img1E.JPG',
-        '/docs/imagenesProducts/estuches/img2E.JPG',
-        '/docs/imagenesProducts/estuches/img3E.JPG',
-
-        //imagenes productos exhibidores
-        '/docs/imagenesProducts/exhibidores/img1EX.JPG',
-        '/docs/imagenesProducts/exhibidores/img1EX.JPG',
-
-        //imagenes productos moldes
-        '/docs/imagenesProducts/moldes/img1M.JPG',
-
-        //imagenes otros productos
-        '/docs/imagenesProducts/otrosProductos/img1O.JPG',
-        '/docs/imagenesProducts/otrosProductos/img2O.JPG',
-        '/docs/imagenesProducts/otrosProductos/img3O.JPG',
-
-        //imagenes productos probadore
-
-        '/docs/imagenesProducts/probadores/img1P.JPG',
-        '/docs/imagenesProducts/probadores/img2P.JPG',
-        '/docs/imagenesProducts/probadores/img3P.JPG',
-    ] )
+async function preCache(){
+    const cache = await caches.open(CACHE)
+    return cache.addAll(element)
 }
 
-self.addEventListener( 'fetch', ev => {
-    const request = ev.request
-
-    if ( request.method !== 'GET' ) {
-        return
-    }   
-    //RESPONDER LA PETICION, BUSCANDO EN EL CACHE
-    ev.respondWith( searchCache(request) )
-
-    //BUSCA UNA NUEVA VERSION Y ACTUALIZA
-    ev.waitUntil( updateCache(request) )
-} )
-
-async function searchCache (request) {
-    const cache = await caches.open( CACHE_NAME )
-    const res   = await cache.match(request)
-    return res || fetch(request)
+async function cachedResponse(req){
+    const cache = await caches.open(CACHE)
+    const response = await cache.match(req)
+    return response || fetch(req)
 }
 
-async function updateCache (request){
-    const cache = await caches.open( CACHE_NAME )
-    const res   = await fetch(request)
-    return cache.put( request, res )
+async function updateCache(req){
+    const cache = await caches.open(CACHE)
+    const response = await fetch(req)
+    return cache.put(req, response)
 }
-

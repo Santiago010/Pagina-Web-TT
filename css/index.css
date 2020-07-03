@@ -10,23 +10,22 @@ body {
   letter-spacing: 1px;
 }
 
-/* BANNER */
+.banner-img {
+  width: 100%;
+  height: 33.5rem;
+}
 .minicontainer {
   width: 100%;
-  height: 33.2rem;
+  height: 100%;
   position: relative;
   object-fit: cover;
 }
 
-
-.overlay h2{
+.overlay h2 {
   color: white;
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 55%;
-  left: 10%;
 }
-
-
