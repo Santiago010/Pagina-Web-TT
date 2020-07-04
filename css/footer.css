@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   background-color: whitesmoke;
   color: black;
@@ -12,6 +12,7 @@
 .footer p {
   font-weight: 900;
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.66rem 0;
 }
 
