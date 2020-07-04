@@ -7,7 +7,6 @@ const URL_INSTAGRAM = "https://www.instagram.com/termo.formados/?hl=es-la";
 const REDES_SOCIALES = [URL_FACEBOOK, URL_INSTAGRAM];
 
 const buttons = document.querySelectorAll(".btn");
-// console.log(buttons);
 
 buttons.forEach((elemento, index) => {
   elemento.addEventListener("click", () => window.open(REDES_SOCIALES[index]));
