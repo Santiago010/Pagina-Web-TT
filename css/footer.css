@@ -2,7 +2,7 @@
   width: 100%;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  background-color: whitesmoke;
+  background-color: #D6DBDF;
   color: black;
   display: flex;
   justify-content: space-evenly;
@@ -10,13 +10,14 @@
 }
 
 .footer p {
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.66rem 0;
 }
 
 .contacto {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -105,8 +105,9 @@ body {
 }
 
 .description {
+  text-align: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   margin-left: 27px;
   padding: 10px;
@@ -114,7 +115,6 @@ body {
   height: auto;
   border-radius: 20px;
   color: black;
-  text-align: center;
 }
 
 .contenedorPrincipal {

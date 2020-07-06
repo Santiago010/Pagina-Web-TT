@@ -26,25 +26,28 @@
   }
 
   .header {
-    height: 60px;
+    height: 65px;
+    position: relative;
+    justify-content: center;
   }
 
   .header__img {
-    width: 110px;
-    height: 70px;
-    margin: 0 -30px -30px -10px;
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    bottom: 13px;
+    left: -35px;
   }
 
   .menu {
-    margin-bottom: 3px;
     justify-content: center;
-    height: 50px;
+    height: 80px;
   }
 
   .menu a {
-    margin-top: 8px;
+    margin-top: 20px;
     margin-right: 10px;
-    font-size: 8.2px;
+    font-size: 11px;
     width: 100%;
   }
 
@@ -57,14 +60,15 @@
   .btn-ghost {
     height: 32px;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
+    font-weight: 300;
     width: 20%;
-    font-size: 8.9px;
+    font-size: 8.7px;
   }
 
   .description {
     background-color: transparent;
-    margin-top: -40px;
+    margin-top: 100px;
     font-size: 14px;
     width: 80%;
     margin: 0;
@@ -75,17 +79,16 @@
     height: 250px;
   }
 
-  .footer {
-    font-size: 8.5px;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
   .footer p {
-    padding: 4px 0;
+    font-size: 12px;
   }
-
-  .ico-footer_reciclaje {
-    width: 40px;
-    height: 40px;
+  .contacto{
+    align-items: flex-start;
   }
 
   .contenedor-imagenes {
