@@ -25,7 +25,7 @@ class Imagen {
     }, 2000);
   }
 }
-// const squareOne = new Imagen(imgOne);
+const squareOne = new Imagen();
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("../sw.js").then(event => console.log(event)).catch(error => console.log(error))
