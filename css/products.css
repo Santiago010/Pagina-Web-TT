@@ -2,13 +2,18 @@
   box-sizing: border-box;
   user-select: none;
 }
+/* ESTA ES LA CLASE DEL COLOR DEL FOOTER */
+.background-footer
+{
+  background-color: whitesmoke;
+}
 
 body {
   margin: 0;
   padding: 0;
   border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #D6DBDF;
+  background-color: whitesmoke;
   letter-spacing: 1px;
 }
 

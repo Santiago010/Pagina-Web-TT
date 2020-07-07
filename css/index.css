@@ -2,7 +2,11 @@
   box-sizing: border-box;
   user-select: none;
 }
-
+/* ESTA ES LA CLASE DEL COLOR DEL FOOTER */
+.background-footer
+{
+  background-color: whitesmoke;
+}
 body {
   margin: 0;
   padding: 0;
@@ -13,40 +17,4 @@ body {
   width: 100%;
   height: 33.5rem;
 }
-.footer {
-  width: 100%;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
-  color: black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.footer p {
-  font-weight: 700;
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.66rem 0;
-}
-
-.contacto {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reciclado {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.ico-footer_reciclaje {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
 
