@@ -28,5 +28,5 @@ class Imagen {
 const squareOne = new Imagen();
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../sw.js").then(event => console.log(event)).catch(error => console.log(error))
+  navigator.serviceWorker.register("../sw.js")
 }
