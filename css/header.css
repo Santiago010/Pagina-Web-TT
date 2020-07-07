@@ -1,54 +1,62 @@
 .titulo-principal {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    color: whitesmoke;
-    font-size: 1.5rem;
-    font-weight: 600;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .LTDA {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
 
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .header {
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    background: rgba(1, 1, 1, 0.9);
-    width: 100%;
-    height: auto;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 5rem;
 }
 
 .header__img {
-    width: 10.31rem;
-    height: 6rem;
-    margin: 0 -35px -35px -10px;
+  width: 4rem;
+  height: 3rem;
+  margin-left: 3rem;
+  margin-right: 0.5rem;
 }
 
 .menu {
-    margin-top: 0.5px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 0.5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu a {
-    width: 100%;
-    font-size: 0.935rem;
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-    padding: 0.62rem;
-    background: rgba(1, 1, 1, 0.9);
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    transition: 0.2s ease all;
+  width: 100%;
+  font-size: 0.935rem;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  padding: 0.62rem;
+  background: rgba(1, 1, 1, 10);
+  /* background-color: aliceblue; */
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.2s ease all;
 }
 
 .menu a:hover {
-    background: whitesmoke;
-    font-weight: 600;
-    color: black;
+  background: whitesmoke;
+  font-weight: 600;
+  color: rgba(1, 1, 1, 10);
 }

@@ -1,82 +1,119 @@
-/* responsive design*/
 @media (max-width: 1200px) {
-    body{
-      font-size: 14px;
-    }
+  body {
+    font-size: 14px;
   }
 
-  @media (max-width: 992px) {
-    body{
-      font-size: 12px;
-    }
-    .description{
-        margin-left: 40px;
-        font-size: 12px;
-    }
+  .contenedor-imagenes {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
   }
 
- /* CELULARES ESTÁNDAR */ 
-  @media (max-width: 768px) {
-    .titulo-principal{
-        font-size: 17px;
-        margin-bottom: -7.5px;
-    }
-    .header{
-        height: 60px;
-    }
-    .header__img{
-        width: 110px;
-        height: 70px;
-        margin: 0 -30px -30px -10px;
-    }
-    .menu{
-        margin-bottom: 3px;
-        justify-content: center;
-        height: 50px;
-    }
-    .menu a{
-        margin-top: 8px;
-        margin-right: 10px;
-        font-size: 8.2px;
-        width: 100%;
-    }
-    .contenedorPrincipal{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn-ghost{
-        
-        height: 32px;
-        text-align: center;
-        padding: 5px;
-        width: 20%;
-        font-size: 8.9px;
-    }
-    .description{
-        background-color: transparent;
-        margin-top: -40px;
-        font-size: 14px;
-        width: 80%;
-        margin: 0;
-    }
-    .carousel .carousel-item{
-        width:250px;
-        height: 250px;
-    }
-    .footer{
-        font-size: 8.5px;
-    }
-    .footer p{
-        padding: 4px 0;
-    }
-    .ico-footer_reciclaje{
-        width: 40px;
-        height: 40px;
-    }
+  .description {
+    margin-left: 40px;
+    font-size: 12px;
   }
-  /* @media (max-width: 576px) {
-    body{
-      font-size: 10px;
-    }
-  } */
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 17px;
+    margin-bottom: -7.5px;
+  }
+  .developers-container {
+    font-size: 10px;
+  }
+
+  .header {
+    height: 65px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .header__img {
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    bottom: 13px;
+    left: -35px;
+  }
+
+  .menu {
+    justify-content: center;
+    height: 60px;
+  }
+
+  .menu a {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 11px;
+    width: 100%;
+    line-height: 1em;
+  }
+
+  .contenedorPrincipal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-ghost {
+    height: 32px;
+    text-align: center;
+    padding: 3px;
+    font-weight: 300;
+    width: 20%;
+    font-size: 8.7px;
+  }
+
+  .description {
+    background-color: transparent;
+    margin-top: 100px;
+    font-size: 14px;
+    width: 80%;
+    margin: 0;
+  }
+
+  .carousel .carousel-item {
+    width: 250px;
+    height: 250px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+  .contacto {
+    align-items: flex-start;
+  }
+
+  .contenedor-imagenes {
+    width: 90%;
+  }
+
+  .contenedor-imagenes .imagenes {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .contenedor-imagenes {
+    width: 98%;
+  }
+
+  .contenedor-imagenes .imagenes {
+    width: 80%;
+  }
+}
