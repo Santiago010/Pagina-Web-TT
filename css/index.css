@@ -2,9 +2,7 @@
   box-sizing: border-box;
   user-select: none;
 }
-/* ESTA ES LA CLASE DEL COLOR DEL FOOTER */
-.background-footer
-{
+.background-footer {
   background-color: whitesmoke;
 }
 body {
@@ -17,4 +15,3 @@ body {
   width: 100%;
   height: 33.5rem;
 }
-

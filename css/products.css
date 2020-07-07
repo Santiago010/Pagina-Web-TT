@@ -2,9 +2,7 @@
   box-sizing: border-box;
   user-select: none;
 }
-/* ESTA ES LA CLASE DEL COLOR DEL FOOTER */
-.background-footer
-{
+.background-footer {
   background-color: whitesmoke;
 }
 
@@ -166,24 +164,4 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-}
-.developers-container
-{
-    width: 100%;
-    height: auto;
-    padding: 25px;
-
-    background: rgba(0,0,0,.93);
-    font-family: 'Lora', serif;
-    color: white;
-    font-size: 0.85rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.developers-container span
-{
-    margin: 3px;
 }

@@ -64,7 +64,7 @@ ul p {
 
 .footer {
   padding: 3rem;
-  background: rgba(1, 1, 1, 0.9);
+  background: rgba(1, 1, 1, 10);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -76,24 +76,22 @@ ul p {
   width: 3.5rem;
   height: 3.5rem;
 }
-.developers-container
-{
-    grid-area: dev;
-    height: auto;
-    padding: 25px;
+.developers-container {
+  grid-area: dev;
+  height: auto;
+  padding: 25px;
 
-    background: rgba(0,0,0,.93);
-    font-family: 'Lora', serif;
-    color: white;
-    font-weight: 100;
-    font-size: 0.85rem;
+  background: rgba(1, 1, 1, 10);
+  font-family: "Lora", serif;
+  color: white;
+  font-weight: 100;
+  font-size: 0.85rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.developers-container span
-{
-    margin: 5px;
+.developers-container span {
+  margin: 5px;
 }

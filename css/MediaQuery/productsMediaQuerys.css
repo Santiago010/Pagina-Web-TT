@@ -24,7 +24,7 @@
     font-size: 17px;
     margin-bottom: -7.5px;
   }
-  .developers-container{
+  .developers-container {
     font-size: 10px;
   }
 
@@ -83,7 +83,7 @@
     height: 250px;
   }
 
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +91,7 @@
   .footer p {
     font-size: 12px;
   }
-  .contacto{
+  .contacto {
     align-items: flex-start;
   }
 
