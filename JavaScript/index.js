@@ -3,10 +3,10 @@ import "./API_FACEBOOK.js";
 const imgOne = document.getElementById("mini_one");
 
 const arrayImg = [
-  "../docs/imagenesIndex/imgB (1).jpg",
-  "../docs/imagenesIndex/imgB (2).jpg",
-  "../docs/imagenesIndex/imgB (3).jpg",
-  "../docs/imagenesIndex/imgB (4).jpg",
+  "../docs/imagenesIndex/imgB1.jpg",
+  "../docs/imagenesIndex/imgB2.jpg",
+  "../docs/imagenesIndex/imgB3.jpg",
+  "../docs/imagenesIndex/imgB4.jpg",
 ];
 
 class Imagen {
@@ -27,6 +27,6 @@ class Imagen {
 }
 const squareOne = new Imagen(imgOne);
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../sw.js")
-}
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("../sw.js")
+// }
