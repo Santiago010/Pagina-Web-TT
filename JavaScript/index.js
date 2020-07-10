@@ -27,6 +27,6 @@ class Imagen {
 }
 const squareOne = new Imagen();
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../sw.js")
-}
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("../sw.js")
+// }

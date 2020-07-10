@@ -83,28 +83,27 @@ body {
   flex-direction: row;
 }
 
-.btn-ghost {
-  border-top: 1px solid whitesmoke;
+
+#btn-ghost{
   position: relative;
   display: inline-block;
   padding: 1rem 1rem 1rem 1rem;
-  color: whitesmoke;
+  color: black;
   font-weight: 500;
-  background: rgba(1, 1, 1, 10);
+  background: transparent;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: black;
   transition: color 1s, background 1s;
   border-bottom: 1.6px solid rgba(1, 1, 1, 10);
 }
 
-.btn-ghost:hover {
-  color: black;
-  background-color: whitesmoke;
+#btn-ghost:hover{
+  color: whitesmoke;
+  background-color: black;
 }
 
-.btn-ghost:active {
-  box-shadow: inset 0 0 2rem white;
+#btn-ghost:active{
+  box-shadow: inset 0 0 2rem black;
 }
 
 .description {
@@ -120,48 +119,73 @@ body {
   color: black;
 }
 
-.contenedorPrincipal {
+ .contenedorPrincipal {
   display: flex;
   height: 37rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.contenedorSecundario {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-}
 
-.productos {
-  color: whitesmoke;
-  margin: 7px 0;
-  font-size: 1.5625em;
-  font-weight: 600;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
-  margin-top: 0;
-}
-
-.carousel {
-  min-height: 250px;
-}
-
-.carousel .carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
-
-.carousel .carousel-item img {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 20px;
+.imagenB{
   width: 100%;
-  height: 100%;
+  height:100%;
+  border-radius: 15px;
+  object-fit:fill;
+}
+
+.contenedorCarrousel{
+  margin-top: 1rem;
+  width: 60%;
+  position: relative;
+  height: 550px;
+}
+
+.BtnAtras,.BtnAdelante{
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  font-weight: bold;
+  position:absolute;
+  color:whitesmoke;
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+.BtnAtras:hover{
+  cursor:pointer;
+  transform:scale(1.2,1.2);
+
+}
+.BtnAdelante:hover{
+  cursor:pointer;
+  transform:scale(1.2,1.2);
+
+}
+
+.overlay2{
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  right: 50%;
+  text-align: center;
+}
+.BtnAtras{
+  left:2%;
+  top:calc(50%);
+}
+
+.BtnAdelante{
+  right:2%;
+  top: calc(50%);
 }
