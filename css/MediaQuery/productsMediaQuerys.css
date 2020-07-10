@@ -9,91 +9,58 @@
 }
 
 @media (max-width: 992px) {
-  body {
-    font-size: 12px;
-  }
+    html
+    {
+        font-size: 13px;
+    }
+    .titulo-principal
+    {
+        font-size: 17px;
+    }
+    .btn-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
 
-  .description {
-    margin-left: 40px;
-    font-size: 12px;
-  }
+        grid-template-areas:
+                            " cunas     exhibidores probadores"
+                            " estuches  empaques    moldes"
+                            " galeria   galeria     galeria";
+    }
+    .btnGa
+    {
+        grid-area: galeria;
+    }
+    #btn-ghost 
+    {
+        border-bottom: none;
+        margin: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+    }
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto
+    {
+        font-size: 10px;
+    }
+    .developers-container
+    {
+        text-align: end;
+    }
 }
 
 @media (max-width: 768px) {
-  .titulo-principal {
-    font-size: 17px;
-    margin-bottom: -7.5px;
-  }
-  .developers-container {
-    font-size: 10px;
-  }
-
-  .header {
-    height: 65px;
-    position: relative;
-    justify-content: center;
-  }
-
-  .header__img {
-    width: 45px;
-    height: 35px;
-    position: absolute;
-    bottom: 13px;
-    left: -35px;
-  }
-
-  .menu {
-    justify-content: center;
-    height: 60px;
-  }
-
-  .menu a {
-    margin-top: 20px;
-    margin-right: 10px;
-    font-size: 11px;
-    width: 100%;
-    line-height: 1em;
-  }
-
-  .contenedorPrincipal {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn-ghost {
-    height: 32px;
-    text-align: center;
-    padding: 3px;
-    font-weight: 300;
-    width: 20%;
-    font-size: 8.7px;
-  }
-
-  .description {
-    background-color: transparent;
-    margin-top: 100px;
-    font-size: 14px;
-    width: 80%;
-    margin: 0;
-  }
-
-  .carousel .carousel-item {
-    width: 250px;
-    height: 250px;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer p {
-    font-size: 12px;
-  }
-  .contacto {
-    align-items: flex-start;
-  }
+  
 
   .contenedor-imagenes {
     width: 90%;

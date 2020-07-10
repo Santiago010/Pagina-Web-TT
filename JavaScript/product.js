@@ -115,6 +115,7 @@ function q (CI){
     containerCarrousel.classList.remove("ocultar");
 
     if(t === btnCu){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[0])
       tittle.textContent = tittles[0]
       description.textContent = descriptions[0]
@@ -122,6 +123,7 @@ function q (CI){
     }
 
     if(t === btnEX){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[1])
       tittle.textContent = tittles[1]
       description.textContent = descriptions[1]
@@ -129,6 +131,7 @@ function q (CI){
     }
 
     if(t === btnPr){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[2])
       tittle.textContent = tittles[2]
       description.textContent = descriptions[2]
@@ -136,6 +139,7 @@ function q (CI){
     }
 
     if(t === btnEs){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[3])
       tittle.textContent = tittles[3]
       description.textContent = descriptions[3]
@@ -143,6 +147,7 @@ function q (CI){
     }
 
     if(t === btnEm){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[4])
       tittle.textContent = tittles[4]
       description.textContent = descriptions[4]
@@ -150,6 +155,7 @@ function q (CI){
     }
 
     if(t === btnMo){
+      containerCarrousel.classList.add('contenedorPrincipal')
       Carrousel(viewImgs, imgsBanner[5])
       tittle.textContent = tittles[5]
       description.textContent = descriptions[5]
@@ -157,9 +163,11 @@ function q (CI){
     }
 
     if(t === btnGa){
-      containerGaleria.classList.remove("ocultar");
-      containerCarrousel.classList.add("ocultar");
-      console.log()
+      containerCarrousel.classList.remove('contenedorPrincipal')
+      containerCarrousel.classList.add('ocultar')
+
+      containerGaleria.classList.remove('ocultar')
+      
 
       const IB_Img = document.querySelectorAll("#wrapper > #IO_Img > img");
 
