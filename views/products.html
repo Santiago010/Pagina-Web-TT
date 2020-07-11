@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" href="../docs/icons/favicon.ico" type="image/x-icon" />
-  <!-- GOOGLE FONTS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300&family=Montserrat:wght@200&display=swap"
     rel="stylesheet" />
@@ -38,32 +37,47 @@
   </nav>
 
   <div class="btn-container">
-    <a id="btn-ghost" class="btnCu">Cunas </a>
-    <a id="btn-ghost" class="btnEX">Exhibidores </a>
-    <a id="btn-ghost" class="btnPr">Probadores </a>
-    <a id="btn-ghost" class="btnEs">Estuches </a>
-    <a id="btn-ghost" class="btnEm">Empaques Blister </a>
-    <a id="btn-ghost" class="btnMo">Moldes </a>
-    <a id="btn-ghost" class="btnGa">Galeria </a>
+    <a class="btn-ghost" >Cunas </a>
+    <a class="btn-ghost" >Exhibidores </a>
+    <a class="btn-ghost" >Probadores </a>
+    <a class="btn-ghost" >Estuches </a>
+    <a class="btn-ghost" >Empaques Blister </a>
+    <a class="btn-ghost" >Moldes </a>
+    <a class="btn-ghost" id="otros">Galeria </a>
   </div>
 
   <div class="contenedorPrincipal" id="containerUno">
-    <div class="contenedorCarrousel">
-      <div class="BtnAtras">
-        &#60
+    <div id="slider-container">
+      <div id="slider-0" class="slider fade">
+        <img class="imgB" src="../docs/imagenesProducts/cunas/img1C.JPG"  alt="">
       </div>
-      <div class="BtnAdelante">
-        &#62
+      <div id="slider-1" class="slider fade">
+        <img class="imgB" src="../docs/imagenesProducts/cunas/img2C.JPG"  alt="">
       </div>
-      <img src="../docs/imagenesProducts/cunas/img1C.JPG" class="imagenB" id="imagen">
-      <div class="overlay2">
-        <h2 id="titleProductos">Cunas</h2>
+      <div id="slider-2" class="slider fade">
+        <img class="imgB" src="../docs/imagenesProducts/cunas/img3C.JPG"  alt="">
+      </div>
+      <div id="arrows-wrapper">
+        <p id="arrow-prev" class="slider-arrow center_y">
+          &#10094;
+        </p>
+        <p id="arrow-next" class="slider-arrow center_y">
+          &#10095;
+        </p>
+        <div id="overlay2">
+          <h2 id="titleProductos">Cunas</h2>
+        </div>
+        <div id="dots-wrapper" class="center_x">
+          <div class="div dot-nav"></div>
+          <div class="div dot-nav"></div>
+          <div class="div dot-nav"></div>
+        </div>
       </div>
     </div>
     <div id="description" class="description">
       Cunas porta ampolletas y porta frascos, Fabricados en materiales PET
       cristal, o poliestireno blanco, Evite que sus ampollas se estropeen en
-      el transporte<hr />
+      el transporte
     </div>
   </div>
 
