@@ -1,6 +1,7 @@
 import "./API_FACEBOOK.js";
 
 const BtnsP = document.querySelectorAll(".btn-ghost");
+const BtnsD = document.querySelectorAll(".btn-ghost-desplegable");
 const containerCarrousel = document.getElementById("containerUno");
 const containerGaleria = document.getElementById("galeria");
 const description = document.getElementById("description");
@@ -103,8 +104,49 @@ BtnsP.forEach((Element, index) => {
     );
   });
 });
-
+BtnsD.forEach((Element, index) => {
+  if (index === 6) {
+    return;
+  }
+  Element.addEventListener("click", () => {
+    containerCarrousel.classList.add("contenedorPrincipal");
+    containerGaleria.classList.add("ocultar");
+    containerCarrousel.classList.remove("ocultar");
+    description.textContent = descriptions[index];
+    tittle.textContent = tittles[index];
+    imgCarrousel.forEach((Element2, index2) =>
+      Element2.setAttribute("src", arrayImg[index][index2])
+    );
+  });
+});
 document.getElementById("otros").addEventListener("click", () => {
+  containerGaleria.classList.remove("ocultar");
+
+  containerCarrousel.classList.remove("contenedorPrincipal");
+  containerCarrousel.classList.add("ocultar");
+
+  const IB_Img = document.querySelectorAll("#wrapper > #IO_Img > img");
+
+  const lazyImg = (entries, observer) => {
+    entries
+      .filter((entry) => entry.isIntersecting)
+      .forEach((entry) => {
+        const img = entry.target;
+        const src = img.getAttribute("data-lazy");
+
+        img.setAttribute("src", src);
+        observer.disconnect();
+      });
+  };
+
+  IB_Img.forEach((img) => {
+    const observer = new IntersectionObserver(lazyImg, {
+      threshold: 0.5,
+    });
+    observer.observe(img);
+  });
+});
+document.getElementById("otros-desplegable").addEventListener("click", () => {
   containerGaleria.classList.remove("ocultar");
 
   containerCarrousel.classList.remove("contenedorPrincipal");

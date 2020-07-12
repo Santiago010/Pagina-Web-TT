@@ -10,14 +10,10 @@
   display: none;
 }
 .menu-desplegable__h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  text-transform: uppercase;
-  background: gold;
-  height: 50px;
+  display: none;
+}
+.menu-desplegable__align{
+  display: none;
 }
 
 body {
