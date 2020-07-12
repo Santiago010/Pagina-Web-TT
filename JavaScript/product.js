@@ -91,24 +91,23 @@ document.querySelector("#arrow-next").addEventListener("click", () => {
 BtnsP.forEach((Element, index) => {
   if (index === 6) {
     return;
-  } else {
-    Element.addEventListener("click", () => {
-      containerCarrousel.classList.add("contenedorPrincipal")
-      containerGaleria.classList.add("ocultar");
-      containerCarrousel.classList.remove("ocultar");
-      description.textContent = descriptions[index];
-      tittle.textContent = tittles[index];
-      imgCarrousel.forEach((Element2, index2) =>
-        Element2.setAttribute("src", arrayImg[index][index2])
-      );
-    });
   }
+  Element.addEventListener("click", () => {
+    containerCarrousel.classList.add("contenedorPrincipal");
+    containerGaleria.classList.add("ocultar");
+    containerCarrousel.classList.remove("ocultar");
+    description.textContent = descriptions[index];
+    tittle.textContent = tittles[index];
+    imgCarrousel.forEach((Element2, index2) =>
+      Element2.setAttribute("src", arrayImg[index][index2])
+    );
+  });
 });
 
 document.getElementById("otros").addEventListener("click", () => {
   containerGaleria.classList.remove("ocultar");
 
-  containerCarrousel.classList.remove("contenedorPrincipal")
+  containerCarrousel.classList.remove("contenedorPrincipal");
   containerCarrousel.classList.add("ocultar");
 
   const IB_Img = document.querySelectorAll("#wrapper > #IO_Img > img");
