@@ -78,6 +78,8 @@ function show_slider(index) {
   dots[slider_index].classList.add("active-dot");
 }
 
+
+
 show_slider(slider_index);
 
 document.querySelector("#arrow-prev").addEventListener("click", () => {
