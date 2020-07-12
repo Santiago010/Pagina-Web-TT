@@ -9,6 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   display: grid;
+  grid-gap: 5px;
   grid-template-columns: 1.2fr 3fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
@@ -82,9 +83,9 @@ ul p {
   padding: 25px;
 
   background: rgba(1, 1, 1, 10);
-  font-family: "Lora", serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
   color: white;
-  font-weight: 100;
   font-size: 0.85rem;
 
   display: flex;

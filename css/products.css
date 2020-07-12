@@ -5,6 +5,20 @@
 .background-footer {
   background-color: whitesmoke;
 }
+/* MENU DESPLEGABLE */
+.menu-despegable {
+  display: none;
+}
+.menu-desplegable__h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-transform: uppercase;
+  background: gold;
+  height: 50px;
+}
 
 body {
   margin: 0;
@@ -64,7 +78,7 @@ body {
 .btn-ghost {
   position: relative;
   display: inline-block;
-  padding: 1rem;
+  padding: 16px;
   color: black;
   font-weight: 500;
   background: transparent;
@@ -85,29 +99,29 @@ body {
 
 .description {
   margin: 20px;
+  border-width: thin;
+  border-bottom: 1px solid black;
   width: 80%;
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: black;
 }
 
-
-
-.center_y{
+.center_y {
   position: relative;
   top: 50%;
   transform: translateX(-50%);
 }
 
-.center_x{
+.center_x {
   position: relative;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
-#slider-container{
+#slider-container {
   border-radius: 15px;
   margin-top: 15px;
   width: 80%;
@@ -116,41 +130,40 @@ body {
   overflow: hidden;
 }
 
-.slider{
+.slider {
   height: 100%;
   width: 100%;
   position: absolute;
 }
 
-.slider img{
+.slider img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-.slider-arrow{
+.slider-arrow {
   color: white;
   cursor: pointer;
   font-size: 50px;
   position: absolute;
 }
 
-#arrow-prev{
-  left:2.5%;
+#arrow-prev {
+  left: 2.5%;
 }
 
-#arrow-next{
-  right:0.5%;
+#arrow-next {
+  right: 0.5%;
 }
 
-
-#dots-wrapper{
+#dots-wrapper {
   display: flex;
   position: absolute;
   bottom: 30px;
 }
 
-.dot-nav{
+.dot-nav {
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -159,11 +172,11 @@ body {
   border: 2px solid white;
 }
 
-.dot-nav:hover{
+.dot-nav:hover {
   background-color: white;
 }
 
-.active-dot{
+.active-dot {
   background-color: darkgray;
 }
 

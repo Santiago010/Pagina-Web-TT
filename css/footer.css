@@ -9,9 +9,10 @@
 }
 
 .footer p {
-  font-weight: 700;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-weight: 900;
   padding: 0.17rem 0;
 }
 
@@ -39,7 +40,8 @@
   padding: 20px;
 
   background: rgba(1, 1, 1, 10);
-  font-family: "Lora", serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
   color: white;
   font-size: 0.85rem;
 

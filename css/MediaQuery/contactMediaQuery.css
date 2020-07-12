@@ -2,6 +2,20 @@
   html {
     font-size: 10px;
   }
+  .developers-container {
+    font-size: 10px;
+  }
+  .header {
+    position: relative;
+    justify-content: center;
+    height: 65px;
+  }
+  .header__img {
+    position: absolute;
+    z-index: 99;
+    left: -13px;
+    bottom: 17px;
+  }
   body {
     grid-template-areas:
       " poster  poster "

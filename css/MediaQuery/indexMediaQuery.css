@@ -22,7 +22,7 @@
     align-items: flex-start;
   }
   .footer p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .header {
     position: relative;
@@ -34,5 +34,8 @@
     z-index: 99;
     left: -13px;
     bottom: 17px;
+  }
+  .developers-container{
+    font-size: 10px;
   }
 }
