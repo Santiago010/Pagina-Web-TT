@@ -40,9 +40,6 @@ body {
 .btn-container {
   grid-area: nav;
 }
-.contenedorPrincipal {
-  grid-area: galeria;
-}
 .footer {
   grid-area: footer;
 }
@@ -50,9 +47,8 @@ body {
   grid-area: dev;
 }
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
-
-
 .contenedorPrincipal {
+  grid-area: galeria;
   display: flex;
   flex-direction: column;
   justify-content: center;

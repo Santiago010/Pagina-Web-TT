@@ -1,11 +1,11 @@
 import "./API_FACEBOOK.js";
 
 const BtnsP = document.querySelectorAll(".btn-ghost");
-const containerCarrousel = document.getElementById('containerUno')
+const containerCarrousel = document.getElementById("containerUno");
 const containerGaleria = document.getElementById("galeria");
 const description = document.getElementById("description");
-const tittle = document.querySelector('#titleProductos');
-const imgCarrousel = document.querySelectorAll('.imgB')
+const tittle = document.querySelector("#titleProductos");
+const imgCarrousel = document.querySelectorAll(".imgB");
 
 const descriptions = [
   "Cunas porta ampolletas y porta frascos, fabricados en materiales PET cristal, o poliestireno blanco, evite que sus ampollas se estropeen en el transporte.",
@@ -28,13 +28,11 @@ const tittles = [
 const URL = "../docs/imagenesProducts/";
 
 const arrayImg = [
-  [`${URL}cunas/img1C.JPG`,
-  `${URL}cunas/img2C.JPG`,
-  `${URL}cunas/img3C.JPG`,],
+  [`${URL}cunas/img1C.JPG`, `${URL}cunas/img2C.JPG`, `${URL}cunas/img3C.JPG`],
   [
     `${URL}exhibidores/img1EX.JPG`,
-  `${URL}exhibidores/img2EX.JPG`,
-  `${URL}exhibidores/img3EX.JPG`,
+    `${URL}exhibidores/img2EX.JPG`,
+    `${URL}exhibidores/img3EX.JPG`,
   ],
   [
     `${URL}probadores/img1P.JPG`,
@@ -49,7 +47,7 @@ const arrayImg = [
   [
     `${URL}empaquesBlister/img1B.JPG`,
     `${URL}empaquesBlister/img2B.JPG`,
-    `${URL}empaquesBlister/img3B.JPG`, 
+    `${URL}empaquesBlister/img3B.JPG`,
   ],
   [
     `${URL}moldes/img1M.JPG`,
@@ -91,18 +89,26 @@ document.querySelector("#arrow-next").addEventListener("click", () => {
 });
 
 BtnsP.forEach((Element, index) => {
-  Element.addEventListener("click", () => {
-    containerGaleria.classList.add("ocultar");
-    containerCarrousel.classList.remove("ocultar");
-    description.textContent = descriptions[index];
-    tittle.textContent = tittles[index]
-    imgCarrousel.forEach((Element2, index2) =>  Element2.setAttribute("src", arrayImg[index][index2])
-      )
-  });
+  if (index === 6) {
+    return;
+  } else {
+    Element.addEventListener("click", () => {
+      containerCarrousel.classList.add("contenedorPrincipal")
+      containerGaleria.classList.add("ocultar");
+      containerCarrousel.classList.remove("ocultar");
+      description.textContent = descriptions[index];
+      tittle.textContent = tittles[index];
+      imgCarrousel.forEach((Element2, index2) =>
+        Element2.setAttribute("src", arrayImg[index][index2])
+      );
+    });
+  }
 });
 
 document.getElementById("otros").addEventListener("click", () => {
   containerGaleria.classList.remove("ocultar");
+
+  containerCarrousel.classList.remove("contenedorPrincipal")
   containerCarrousel.classList.add("ocultar");
 
   const IB_Img = document.querySelectorAll("#wrapper > #IO_Img > img");
