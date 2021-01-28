@@ -7,7 +7,7 @@
   }
   .header {
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     height: 65px;
   }
   .header__img {

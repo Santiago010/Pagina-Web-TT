@@ -2,7 +2,7 @@ import "./API_FACEBOOK.js";
 
 const URL_FACEBOOK =
   "https://www.facebook.com/Termoformados-Troquelados-JG-190642551559996/";
-const URL_INSTAGRAM = "https://www.instagram.com/termo.formados/?hl=es-la";
+const URL_INSTAGRAM = "https://www.instagram.com/termoformadosjg/?hl=es-la";
 
 const REDES_SOCIALES = [URL_FACEBOOK, URL_INSTAGRAM];
 

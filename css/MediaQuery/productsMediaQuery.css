@@ -30,7 +30,7 @@
   }
   .header {
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     height: 65px;
   }
   .header__img {
@@ -77,15 +77,15 @@
     transition: color 1s, background 1s;
     border-bottom: 1.6px solid rgba(1, 1, 1, 10);
   }
-  
-.btn-ghost-desplegable:hover {
-  color: whitesmoke;
-  background-color: black;
-}
 
-.btn-ghost-desplegable:active {
-  box-shadow: inset 0 0 32px black;
-}
+  .btn-ghost-desplegable:hover {
+    color: whitesmoke;
+    background-color: black;
+  }
+
+  .btn-ghost-desplegable:active {
+    box-shadow: inset 0 0 32px black;
+  }
 
   .contenedorPrincipal {
     width: 100%;
@@ -120,6 +120,6 @@
   }
 
   .contenedor-imagenes .imagenes {
-    width: 80%;
+    width: 90%;
   }
 }

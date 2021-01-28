@@ -9,12 +9,12 @@ const tittle = document.querySelector("#titleProductos");
 const imgCarrousel = document.querySelectorAll(".imgB");
 
 const descriptions = [
-  "Cunas porta ampolletas y porta frascos, fabricados en materiales PET cristal, o poliestireno blanco, evite que sus ampollas se estropeen en el transporte.",
+  "Cunas porta ampolletas y porta frascos, fabricados en materiales PET cristal o poliestireno blanco, evite que sus ampollas se estropeen en el transporte.",
   "Exhibidores para puntos de venta, manejamos amplia gama de colores, en diferentes materiales y calibres, Exhiba sus productos de forma organizada y aumente sus ventas.",
   "Probadores para puntos de venta e impulsadoras, para promocionar su producto y la calidad, Puede personalizar su marca.",
   "Estuches amplia gama de colores y calibres para empacar su producto terminado y darle mejor presentación y protección.",
-  "El empaque blíster es utilizado para exhibir un producto, sin que el contenido sea manipulado por el comprador y mostrando elegancia y posicionamiento de marca.",
-  "Diseñamos y fabricamos los moldes en su totalidad, en las instalaciones de nuestra compañía, así mismo podemos  elaborar la muestrafísica, de su proyecto.",
+  "El Empaque Blíster es utilizado para exhibir un producto, sin que el contenido sea manipulado por el comprador y mostrando elegancia y posicionamiento de marca.",
+  "Diseñamos y fabricamos los Moldes en su totalidad, en las instalaciones de nuestra compañía, así mismo podemos  elaborar la muestrafísica, de su proyecto.",
 ];
 
 const tittles = [
@@ -26,34 +26,36 @@ const tittles = [
   "Moldes",
 ];
 
-const URL = "../docs/imagenesProducts/";
-
 const arrayImg = [
-  [`${URL}cunas/img1C.JPG`, `${URL}cunas/img2C.JPG`, `${URL}cunas/img3C.JPG`],
   [
-    `${URL}exhibidores/img1EX.JPG`,
-    `${URL}exhibidores/img2EX.JPG`,
-    `${URL}exhibidores/img3EX.JPG`,
+    '../docs/ImagesProducts/cunas/img1C.JPG',
+    '../docs/ImagesProducts/cunas/img2C.JPG',
+    '../docs/ImagesProducts/cunas/img3C.JPG',
   ],
   [
-    `${URL}probadores/img1P.JPG`,
-    `${URL}probadores/img2P.JPG`,
-    `${URL}probadores/img3P.JPG`,
+    '../docs/ImagesProducts/exhibidores/img1EX.JPG',
+    '../docs/ImagesProducts/exhibidores/img2EX.JPG',
+    '../docs/ImagesProducts/exhibidores/img3EX.JPG',
   ],
   [
-    `${URL}estuches/img1E.JPG`,
-    `${URL}estuches/img2E.JPG`,
-    `${URL}estuches/img3E.JPG`,
+    '../docs/ImagesProducts/probadores/img1P.JPG',
+    '../docs/ImagesProducts/probadores/img2P.JPG',
+    '../docs/ImagesProducts/probadores/img3P.JPG',
   ],
   [
-    `${URL}empaquesBlister/img1B.JPG`,
-    `${URL}empaquesBlister/img2B.JPG`,
-    `${URL}empaquesBlister/img3B.JPG`,
+    '../docs/ImagesProducts/estuches/img1E.JPG',
+    '../docs/ImagesProducts/estuches/img2E.JPG',
+    '../docs/ImagesProducts/estuches/img3E.JPG',
   ],
   [
-    `${URL}moldes/img1M.JPG`,
-    `${URL}moldes/img2M.JPG`,
-    `${URL}moldes/img3M.JPG`,
+    '../docs/ImagesProducts/empaquesBlister/img1B.JPG',
+    '../docs/ImagesProducts/empaquesBlister/img2B.JPG',
+    '../docs/ImagesProducts/empaquesBlister/img3B.JPG',
+  ],
+  [
+    '../docs/ImagesProducts/moldes/img1M.JPG',
+    '../docs/ImagesProducts/moldes/img2M.JPG',
+    '../docs/ImagesProducts/moldes/img3M.JPG',
   ],
 ];
 
@@ -78,8 +80,6 @@ function show_slider(index) {
   slider[slider_index].style.display = "block";
   dots[slider_index].classList.add("active-dot");
 }
-
-
 
 show_slider(slider_index);
 

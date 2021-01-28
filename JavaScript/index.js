@@ -3,16 +3,16 @@ import "./API_FACEBOOK.js";
 const imgOne = document.getElementById("mini_one");
 
 const arrayImg = [
-  "../docs/imagenesIndex/imgB1.jpg",
-  "../docs/imagenesIndex/imgB2.jpg",
-  "../docs/imagenesIndex/imgB3.jpg",
-  "../docs/imagenesIndex/imgB4.jpg",
+  "../docs/ImagesIndex/imgB1.jpg",
+  "../docs/ImagesIndex/imgB2.jpg",
+  "../docs/ImagesIndex/imgB3.jpg",
+  "../docs/ImagesIndex/imgB4.jpg",
 ];
 
 class Imagen {
   constructor() {
     this.name = imgOne;
-    this.randomImg()
+    this.randomImg();
     this.changeSource = this.changeSource.bind(this);
     this.name.addEventListener("load", this.changeSource);
   }
@@ -27,6 +27,10 @@ class Imagen {
 }
 const squareOne = new Imagen();
 
-// if ("serviceWorker" in navigator) {
-//   navigator.serviceWorker.register("../sw.js")
-// }
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('../sw.js')
+    .then(ev => console.log(ev))
+    .catch(error => {
+      console.log(error.message)
+    })
+}

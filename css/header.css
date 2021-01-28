@@ -1,13 +1,13 @@
 .titulo-principal {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: black;
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .LTDA {
-  font-family: "Lato", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -46,7 +46,6 @@
   font-family: "Lato", sans-serif;
   padding: 0.62rem;
   background: rgba(1, 1, 1, 10);
-  /* background-color: aliceblue; */
   color: whitesmoke;
   text-decoration: none;
   text-transform: uppercase;
